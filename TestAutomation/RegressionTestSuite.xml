@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Indebted Automation Testing" time-out="30000">
+  <listeners>
+  		<listener class-name="co.indebted.mypackage.utilities.IExecutionListenerTestNG"></listener>
+  </listeners>
+  
+  <test thread-count="5" name="LogIn">
+    <classes>
+      <class name="co.indebted.mypackage.tests.LoginTest"/>
+    </classes>
+  </test> <!-- logIn -->
+  
+    <test thread-count="5" name="ResetPassword">
+    <classes>
+      <class name="co.indebted.mypackage.tests.ResetPasswordTest"/>
+    </classes>
+  </test> <!-- ResetPassword -->
+  
+    <test thread-count="5" name="Analyse">
+    <classes>
+      <class name="co.indebted.mypackage.tests.AnalyseTest"/>
+    </classes>
+  </test> <!-- Analyse -->
+</suite> <!-- Suite -->

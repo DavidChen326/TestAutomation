@@ -1,0 +1,39 @@
+package co.indebted.mypackage.tests;
+
+import org.junit.Assert;
+import org.testng.annotations.Test;
+
+import co.indebted.mypackage.pagefactories.LoginPageFactory;
+import co.indebted.mypackage.pagefactories.ResetPageFactory;
+import co.indebted.mypackage.pagefactories.ResetSuccessfulPageFactory;
+import co.indebted.mypackage.utilities.TestSetupAndCloseDown;
+
+public class ResetPasswordTest extends TestSetupAndCloseDown{
+
+	@Test
+	public void resetPassword() throws InterruptedException {
+		String email = "david@indebted.io";
+		String confirmationMessage = null;
+		
+		//click reset then type emial address then confirm
+		driver.get("https://app.indebted-staging.co/");
+		LoginPageFactory loginPage = new LoginPageFactory(driver);
+		loginPage.clickReset();
+		
+		ResetPageFactory resetPageFactory = new ResetPageFactory(driver);
+		resetPageFactory.reset(email);
+
+		ResetSuccessfulPageFactory resetSuccessfulPageFactory = new ResetSuccessfulPageFactory(driver);
+		confirmationMessage = resetSuccessfulPageFactory.getMessage();
+		
+		
+		//assertions
+		try {
+			Assert.assertEquals(confirmationMessage, "You will receive an email within the next few minutes. It contains instructions for changing your password.");
+		}
+		catch(AssertionError ex){
+			System.out.println("Error: Confirm message does not match with expected");
+		    throw ex;
+		}
+	}
+}
