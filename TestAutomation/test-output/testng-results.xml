@@ -2,52 +2,52 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-17T02:16:01Z" name="Indebted Automation Testing" finished-at="2018-10-17T02:16:37Z" duration-ms="36142">
+  <suite started-at="2018-10-17T22:26:19Z" name="Indebted Automation Testing" finished-at="2018-10-17T22:27:00Z" duration-ms="41385">
     <groups>
     </groups>
-    <test started-at="2018-10-17T02:16:01Z" name="LogIn" finished-at="2018-10-17T02:16:12Z" duration-ms="11799">
+    <test started-at="2018-10-17T22:26:19Z" name="LogIn" finished-at="2018-10-17T22:26:34Z" duration-ms="15082">
       <class name="co.indebted.mypackage.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:co.indebted.mypackage.tests.LoginTest@201a4587]" started-at="2018-10-17T02:16:01Z" name="setUp" finished-at="2018-10-17T02:16:03Z" duration-ms="2318" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:co.indebted.mypackage.tests.LoginTest@368247b9]" started-at="2018-10-17T22:26:19Z" name="setUp" finished-at="2018-10-17T22:26:23Z" duration-ms="3993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTestPOM()[pri:0, instance:co.indebted.mypackage.tests.LoginTest@201a4587]" started-at="2018-10-17T02:16:03Z" name="loginTestPOM" finished-at="2018-10-17T02:16:12Z" duration-ms="8927" status="PASS">
+        <test-method signature="loginTestPOM()[pri:0, instance:co.indebted.mypackage.tests.LoginTest@368247b9]" started-at="2018-10-17T22:26:23Z" name="loginTestPOM" finished-at="2018-10-17T22:26:33Z" duration-ms="10480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestPOM -->
-        <test-method is-config="true" signature="closeDown()[pri:0, instance:co.indebted.mypackage.tests.LoginTest@201a4587]" started-at="2018-10-17T02:16:12Z" name="closeDown" finished-at="2018-10-17T02:16:12Z" duration-ms="526" status="PASS">
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:co.indebted.mypackage.tests.LoginTest@368247b9]" started-at="2018-10-17T22:26:33Z" name="closeDown" finished-at="2018-10-17T22:26:34Z" duration-ms="580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDown -->
       </class> <!-- co.indebted.mypackage.tests.LoginTest -->
     </test> <!-- LogIn -->
-    <test started-at="2018-10-17T02:16:12Z" name="ResetPassword" finished-at="2018-10-17T02:16:18Z" duration-ms="5835">
+    <test started-at="2018-10-17T22:26:34Z" name="ResetPassword" finished-at="2018-10-17T22:26:41Z" duration-ms="7238">
       <class name="co.indebted.mypackage.tests.ResetPasswordTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:co.indebted.mypackage.tests.ResetPasswordTest@70e9c95d]" started-at="2018-10-17T02:16:12Z" name="setUp" finished-at="2018-10-17T02:16:15Z" duration-ms="2224" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:co.indebted.mypackage.tests.ResetPasswordTest@17f62e33]" started-at="2018-10-17T22:26:34Z" name="setUp" finished-at="2018-10-17T22:26:36Z" duration-ms="1876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="resetPassword()[pri:0, instance:co.indebted.mypackage.tests.ResetPasswordTest@70e9c95d]" started-at="2018-10-17T02:16:15Z" name="resetPassword" finished-at="2018-10-17T02:16:18Z" duration-ms="3090" status="PASS">
+        <test-method signature="resetPassword()[pri:0, instance:co.indebted.mypackage.tests.ResetPasswordTest@17f62e33]" started-at="2018-10-17T22:26:36Z" name="resetPassword" finished-at="2018-10-17T22:26:40Z" duration-ms="4914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetPassword -->
-        <test-method is-config="true" signature="closeDown()[pri:0, instance:co.indebted.mypackage.tests.ResetPasswordTest@70e9c95d]" started-at="2018-10-17T02:16:18Z" name="closeDown" finished-at="2018-10-17T02:16:18Z" duration-ms="515" status="PASS">
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:co.indebted.mypackage.tests.ResetPasswordTest@17f62e33]" started-at="2018-10-17T22:26:40Z" name="closeDown" finished-at="2018-10-17T22:26:41Z" duration-ms="446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDown -->
       </class> <!-- co.indebted.mypackage.tests.ResetPasswordTest -->
     </test> <!-- ResetPassword -->
-    <test started-at="2018-10-17T02:16:18Z" name="Analyse" finished-at="2018-10-17T02:16:37Z" duration-ms="18468">
+    <test started-at="2018-10-17T22:26:41Z" name="Analyse" finished-at="2018-10-17T22:27:00Z" duration-ms="19033">
       <class name="co.indebted.mypackage.tests.AnalyseTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:co.indebted.mypackage.tests.AnalyseTest@4a883b15]" started-at="2018-10-17T02:16:18Z" name="setUp" finished-at="2018-10-17T02:16:20Z" duration-ms="1859" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:co.indebted.mypackage.tests.AnalyseTest@543295b0]" started-at="2018-10-17T22:26:41Z" name="setUp" finished-at="2018-10-17T22:26:43Z" duration-ms="1984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AnalyseTestPOM()[pri:0, instance:co.indebted.mypackage.tests.AnalyseTest@4a883b15]" started-at="2018-10-17T02:16:20Z" name="AnalyseTestPOM" finished-at="2018-10-17T02:16:36Z" duration-ms="16095" status="PASS">
+        <test-method signature="AnalyseTestPOM()[pri:0, instance:co.indebted.mypackage.tests.AnalyseTest@543295b0]" started-at="2018-10-17T22:26:43Z" name="AnalyseTestPOM" finished-at="2018-10-17T22:26:59Z" duration-ms="16415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AnalyseTestPOM -->
-        <test-method is-config="true" signature="closeDown()[pri:0, instance:co.indebted.mypackage.tests.AnalyseTest@4a883b15]" started-at="2018-10-17T02:16:36Z" name="closeDown" finished-at="2018-10-17T02:16:37Z" duration-ms="511" status="PASS">
+        <test-method is-config="true" signature="closeDown()[pri:0, instance:co.indebted.mypackage.tests.AnalyseTest@543295b0]" started-at="2018-10-17T22:26:59Z" name="closeDown" finished-at="2018-10-17T22:27:00Z" duration-ms="629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDown -->
