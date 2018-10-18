@@ -21,22 +21,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
-	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/commons-collections4-4.1.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/commons-compress-1.18.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/cucumber-core-1.2.5.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/cucumber-java-1.2.5.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/cucumber-junit-1.2.5.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/cucumber-jvm-deps-1.0.6.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/gherkin-2.12.2.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/poi-4.0.0.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/poi-excelant-4.0.0.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/poi-ooxml-4.0.0.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/poi-ooxml-schemas-4.0.0.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/poi-scratchpad-4.0.0.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/selenium-server-standalone-3.13.0.jar"/>
-	<classpathentry kind="lib" path="/Users/davidchen/Documents/Selenium/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

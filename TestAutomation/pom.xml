@@ -41,51 +41,6 @@
   	  </plugin>
     </plugins>
   </build>
-  <dependencies>
-  	<dependency>
-  		<groupId>org.seleniumhq.selenium</groupId>
-  		<artifactId>selenium-java</artifactId>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.testng</groupId>
-  		<artifactId>testng</artifactId>
-  		<scope>test</scope>
-  	</dependency>
-  	<dependency>
-  		<groupId>junit</groupId>
-  		<artifactId>junit</artifactId>
-  		<scope>test</scope>
-  	</dependency>
-  	<dependency>
-  		<groupId>info.cukes</groupId>
-  		<artifactId>cucumber-junit</artifactId>
-  		<scope>test</scope>
-  	</dependency>
-  	<dependency>
-  		<groupId>info.cukes</groupId>
-  		<artifactId>cucumber-java</artifactId>
-  		<scope>test</scope>
-  	</dependency>
-  	<dependency>
-  		<groupId>info.cukes</groupId>
-  		<artifactId>cucumber-core</artifactId>
-  		<scope>test</scope>
-  	</dependency>
-  	<dependency>
-  		<groupId>info.cukes</groupId>
-  		<artifactId>gherkin</artifactId>
-  		<scope>provided</scope>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.apache.poi</groupId>
-  		<artifactId>poi</artifactId>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.apache.poi</groupId>
-  		<artifactId>poi-ooxml</artifactId>
-  	</dependency>
-  </dependencies>
-  <dependencyManagement>
   	<dependencies>
   		<dependency>
   			<groupId>org.seleniumhq.selenium</groupId>
@@ -133,5 +88,4 @@
   			<version>4.0.0</version>
   		</dependency>
   	</dependencies>
-  </dependencyManagement>
 </project>
