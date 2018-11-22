@@ -12,7 +12,7 @@ public class LoginFactory {
 	public void login() {
 	driver.get("https://app.indebted-staging.co/");
 	String username = "david@indebted.io";
-	String password = "J7EUSz02AV5R";
+	String password = "NtL25pQGzwr8";
 	 
 	LoginPageFactory loginPage = new LoginPageFactory(driver);
 	loginPage.logIn(username, password);

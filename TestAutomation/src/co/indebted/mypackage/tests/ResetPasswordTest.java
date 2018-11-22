@@ -6,12 +6,12 @@ import org.testng.annotations.Test;
 import co.indebted.mypackage.pagefactories.LoginPageFactory;
 import co.indebted.mypackage.pagefactories.ResetPageFactory;
 import co.indebted.mypackage.pagefactories.ResetSuccessfulPageFactory;
-import co.indebted.mypackage.utilities.TestSetupAndCloseDown;
+import co.indebted.mypackage.utilities.TestSetupAndTearDown;
 
-public class ResetPasswordTest extends TestSetupAndCloseDown{
+public class ResetPasswordTest extends TestSetupAndTearDown{
 
 	@Test
-	public void resetPassword() throws InterruptedException {
+	public void resetPasswordTests() throws InterruptedException {
 		String email = "david@indebted.io";
 		String confirmationMessage = null;
 		

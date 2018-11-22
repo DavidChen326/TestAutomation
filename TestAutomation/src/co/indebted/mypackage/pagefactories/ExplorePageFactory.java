@@ -12,6 +12,9 @@ public class ExplorePageFactory {
 	@FindBy(xpath = "//*[@id=\"navbarResponsive\"]/ul[1]/li[5]/a")
 	WebElement analyseTab;
 	
+	@FindBy(xpath = "//*[@id=\"navbarResponsive\"]/ul[1]/li[6]/a")
+	WebElement settingsTab;
+	
 	//steps
 	public String getTitle() {
 		return driver.getTitle();
@@ -20,6 +23,10 @@ public class ExplorePageFactory {
 	//actions
 	public void clickAnalyse() {
 		analyseTab.click();
+	}
+	
+	public void clickSettings() {
+		settingsTab.click();
 	}
 	
 	//constructor

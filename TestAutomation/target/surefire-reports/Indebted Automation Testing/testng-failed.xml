@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite time-out="30000" name="Failed suite [Indebted Automation Testing]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="co.indebted.mypackage.utilities.IExecutionListenerTestNG"/>
+  </listeners>
+  <test time-out="30000" thread-count="5" name="LogIn(failed)" verbose="0">
+    <classes>
+      <class name="co.indebted.mypackage.tests.LoginTest">
+        <methods>
+          <include name="loginTestPOM"/>
+          <include name="setUp"/>
+          <include name="closeDown"/>
+        </methods>
+      </class> <!-- co.indebted.mypackage.tests.LoginTest -->
+    </classes>
+  </test> <!-- LogIn(failed) -->
+</suite> <!-- Failed suite [Indebted Automation Testing] -->

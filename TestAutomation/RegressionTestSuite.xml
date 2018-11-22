@@ -17,9 +17,27 @@
     </classes>
   </test> <!-- ResetPassword -->
   
-    <test thread-count="5" name="Analyse">
+  <test thread-count="5" name="Analyse">
     <classes>
-      <class name="co.indebted.mypackage.tests.AnalyseTest"/>
+      <class name="co.indebted.mypackage.tests.analyse.AnalyseTest"/>
     </classes>
   </test> <!-- Analyse -->
+  
+  <test thread-count="5" name="Settings">
+    <classes>
+      <class name="co.indebted.mypackage.tests.settings.SettingsTest"/>
+      <class name="co.indebted.mypackage.tests.settings.GeneralTabTest"/>
+      <class name="co.indebted.mypackage.tests.settings.ComplianceTabTest"/>
+      <class name="co.indebted.mypackage.tests.settings.PermissionsTabTest"/>
+      <class name="co.indebted.mypackage.tests.settings.UsersTabTest"/>
+    </classes>
+  </test>
+    
+  <test thread-count="5" name="Portals">
+    <classes>
+      <class name="co.indebted.mypackage.tests.portals.AgentPortalTest"/>
+      <class name="co.indebted.mypackage.tests.portals.DebtorPortalTest"/>
+    </classes>
+  </test> <!-- Analyse -->
+  
 </suite> <!-- Suite -->

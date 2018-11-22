@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="co.indebted.mypackage.ddt.LoginTestDDT_Excel">
+      <class name="co.indebted.mypackage.tests.portals.AgentPortalTest">
         <methods>
-          <include name="loginTest"/>
-          <include name="closeDown"/>
           <include name="setUp"/>
+          <include name="agentPortalTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- co.indebted.mypackage.ddt.LoginTestDDT_Excel -->
+      </class> <!-- co.indebted.mypackage.tests.portals.AgentPortalTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
