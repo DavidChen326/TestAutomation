@@ -19,6 +19,10 @@ public class DebtPageFactory {
 	@FindBy(id = "PaymentMenu")
 	WebElement paymentButton;
 	
+	//Hardship
+		@FindBy(xpath = "/html/body/div[3]/div/div[1]/div[5]/div[9]/div[2]/div/div/a[2]")
+		WebElement agentPortalButton;
+	
 	//agent portal
 		@FindBy(xpath = "/html/body/div[3]/div/div[1]/div[5]/div[9]/div[2]/div/div/a[2]")
 		WebElement agentPortalButton;
@@ -44,10 +48,10 @@ public class DebtPageFactory {
 		WebElement agentPortalBPayTab;
 		
 	//agent portal steps 2 payment method --> existing methods
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > form > div.container > div > div:nth-child(2) > div:nth-child(1) > div.col-md-2.col-xs-3.c0122")
+		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > form > div.container > div > div:nth-child(2) > div:nth-child(1) > div.col-md-2.col-xs-3.c0121")
 		WebElement agentPortalExistingCreditCard;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > form > div.container > div > div:nth-child(2) > div:nth-child(1) > div.col-md-2.col-xs-2.c0122")
+		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > form > div.container > div > div:nth-child(2) > div:nth-child(1) > div.col-md-2.col-xs-2.c0121")
 		WebElement agentPortalExistingBank;
 		
 	//agent portal step 3
@@ -111,7 +115,7 @@ public class DebtPageFactory {
 		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div:nth-child(2) > div > form > div > div:nth-child(1) > div > div:nth-child(3) > div:nth-child(2) > div > fieldset > div")
 		WebElement agentPortalCountry;
 
-	//contact
+	//contacts
 		@FindBy(css = "body > div:nth-child(7) > div > div.col-xs-12.col-lg-8 > div:nth-child(1) > div > ul > li:nth-child(2) > a")
 		WebElement sendEmailTab;
 		
@@ -127,8 +131,137 @@ public class DebtPageFactory {
 		@FindBy(css = "#new_email_tab > div > form > input.btn.btn-primary.btn.primary")
 		WebElement sendEmailButton;
 		
+		//adjustment
+		@FindBy(css = "body > div:nth-child(7) > div > div.col-xs-12.col-lg-8 > div:nth-child(1) > div > ul > li:nth-child(6) > a")
+		WebElement adjustmentsTab;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(2) > div > form > div > div:nth-child(1) > fieldset:nth-child(1) > div.c216 > div > li:nth-child(1)")
+		WebElement splitPrincipalButtonInitial;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(3) > div > form > div > div:nth-child(1) > fieldset:nth-child(1) > div.c216 > div > li:nth-child(2)")
+		WebElement splitFeeButtonSecond;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(3) > div > form > div > div:nth-child(1) > fieldset:nth-child(1) > div.c216 > div > li:nth-child(3)")
+		WebElement splitInterestButtonSecond;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(2) > div > form > div > div:nth-child(1) > fieldset:nth-child(2) > div.c216 > div > li:nth-child(1)")
+		WebElement splitIncreaseButtonInitial;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(3) > div > form > div > div:nth-child(1) > fieldset:nth-child(2) > div.c216 > div > li:nth-child(1)")
+		WebElement splitIncreaseButtonSecond;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(2) > div > form > div > div:nth-child(1) > fieldset:nth-child(2) > div.c216 > div > li:nth-child(2)")
+		WebElement splitDecreaseButtonInitial;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(3) > div > form > div > div:nth-child(1) > fieldset:nth-child(2) > div.c216 > div > li:nth-child(2)")
+		WebElement splitDecreaseButtonSecond;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(2) > div > form > div > div:nth-child(1) > div:nth-child(3) > fieldset > div > input")
+		WebElement splitAmountTextBoxInitial;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(3) > div > form > div > div:nth-child(1) > div:nth-child(3) > fieldset > div > input")
+		WebElement splitAmountTextBoxSecond;
+		
+		@FindBy(name = "description")
+		WebElement splitReasonTextBoxInitial;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(3) > div > form > div > div:nth-child(1) > div:nth-child(4) > fieldset > textarea")
+		WebElement splitReasonTextBoxSecond;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(2) > div > form > div > div:nth-child(2) > img")
+		WebElement addSplitButtonInitial;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(3) > div > form > div > div:nth-child(2) > img")
+		WebElement addSplitButtonSecond;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(2) > div > form > div:nth-child(1) > fieldset > div > input")
+		WebElement adjustmentDescriptionTextBox;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(2) > div > form > div.c2126 > li:nth-child(2) > div > div:nth-child(2) > img")
+		WebElement deleteFirstSplitButton;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(2) > div > form > div.c2126 > li:nth-child(3) > div > div:nth-child(2) > img")
+		WebElement deleteSecondSplitButton;
+		
+		@FindBy(css = "#adjustments > div > div > div:nth-child(2) > div > form > div.c2126 > div:nth-child(5) > div > button")
+		WebElement saveAdjustmentButton;
+		
 	//return methods to test classes
-	//contacts
+		
+		//adjustments
+		public WebElement getAdjustmentDescriptionTextBox() {
+			return adjustmentDescriptionTextBox;
+		}
+		
+		public WebElement getDeleteSecondSplitButton() {
+			return deleteSecondSplitButton;
+		}
+		
+		public WebElement getDeleteFirstSplitButton() {
+			return deleteFirstSplitButton;
+		}
+		
+		public WebElement getAddSplitButtonSecond() {
+			return addSplitButtonSecond;
+		}
+		
+		public WebElement getAddSplitButtonInitial() {
+			return addSplitButtonInitial;
+		}
+		
+		public WebElement getSplitReasonTextBoxSecond() {
+			return splitReasonTextBoxSecond;
+		}
+		
+		public WebElement getSplitReasonTextBoxInitial() {
+			return splitReasonTextBoxInitial;
+		}
+		
+		public WebElement getSplitAmountTextBoxSecond() {
+			return splitAmountTextBoxSecond;
+		}
+		
+		public WebElement getSplitAmountTextBoxInitial() {
+			return splitAmountTextBoxInitial;
+		}
+		
+		public WebElement getSplitDecreaseButtonSecond() {
+			return splitDecreaseButtonSecond;
+		}
+		
+		public WebElement getSplitIncreaseButtonSecond() {
+			return splitIncreaseButtonSecond;
+		}
+		
+		public WebElement getSplitDecreaseButtonInitial() {
+			return splitDecreaseButtonInitial;
+		}
+		
+		public WebElement getSplitIncreaseButtonInitial() {
+			return splitIncreaseButtonInitial;
+		}
+		
+		public WebElement getSplitInterestButtonSecond() {
+			return splitInterestButtonSecond;
+		}
+		
+		public WebElement getSplitFeeButtonSecond() {
+			return splitFeeButtonSecond;
+		}
+		
+		public WebElement getSplitPrincipalButtonInitial() {
+			return splitPrincipalButtonInitial;
+		}
+		
+		public WebElement getSaveAdjustmentButton() {
+			return saveAdjustmentButton;
+		}
+		
+		//contacts
+		public WebElement getAdjustmentsTab() {
+			return adjustmentsTab;
+		}	
+		
 		public WebElement getDebtorPortalLink() {
 			return debtorPortalLink;
 		}		
