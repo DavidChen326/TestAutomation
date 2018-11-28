@@ -40,7 +40,7 @@ public class DebtorPortalTest extends TestSetupAndTearDown{
 			
 			//open debtor portal via link sent to debtor by email
 			driver.get(debtorProtalLink);
-			Assert.assertEquals(debtorPortalPage.getGreetingsHeader().getText().contains("Margarete Lavada Rosenbaum"), true);
+			Assert.assertEquals(debtorPortalPage.getGreetingsHeader().getText().contains("Vedvrat Lavada Sharma"), true);
 			Thread.sleep(1000);
 		}
 		catch(AssertionError ex){

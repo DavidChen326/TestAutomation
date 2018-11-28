@@ -4,26 +4,15 @@
   <listeners>
     <listener class-name="co.indebted.mypackage.utilities.IExecutionListenerTestNG"/>
   </listeners>
-  <test time-out="30000" thread-count="5" name="LogIn(failed)">
+  <test time-out="30000" thread-count="5" name="Settings(failed)">
     <classes>
-      <class name="co.indebted.mypackage.tests.LoginTest">
+      <class name="co.indebted.mypackage.tests.settings.GeneralTabTest">
         <methods>
-          <include name="loginTestPOM"/>
+          <include name="GeneralTabTests"/>
           <include name="setUp"/>
-          <include name="closeDown"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- co.indebted.mypackage.tests.LoginTest -->
+      </class> <!-- co.indebted.mypackage.tests.settings.GeneralTabTest -->
     </classes>
-  </test> <!-- LogIn(failed) -->
-  <test time-out="30000" thread-count="5" name="Analyse(failed)">
-    <classes>
-      <class name="co.indebted.mypackage.tests.AnalyseTest">
-        <methods>
-          <include name="closeDown"/>
-          <include name="AnalyseTestPOM"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- co.indebted.mypackage.tests.AnalyseTest -->
-    </classes>
-  </test> <!-- Analyse(failed) -->
+  </test> <!-- Settings(failed) -->
 </suite> <!-- Failed suite [Indebted Automation Testing] -->

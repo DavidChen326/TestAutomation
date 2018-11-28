@@ -35,10 +35,10 @@ public class GeneralTabTest extends TestSetupAndTearDown{
 			generalTab.getBrandColour().click();
 			generalTab.getSaveButton().click();
 			
-			Assert.assertEquals(generalTab.getBrandNameTextBox(), "Indebted.stg");
+			Assert.assertEquals(generalTab.getBrandNameTextBox().getAttribute("value"), "Indebted.stg");
 		}
 		catch(AssertionError ex){
-			System.out.println("Error: ");
+			System.out.println("Error: Brand name did not set correctly");
 		    throw ex;
 		}
 		

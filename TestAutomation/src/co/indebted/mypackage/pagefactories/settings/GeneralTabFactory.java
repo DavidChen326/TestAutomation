@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GeneralTabFactory {
 
@@ -12,7 +14,7 @@ public class GeneralTabFactory {
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[1]/a")
 	WebElement generalTab;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/form/div[1]/div/fieldset/div/input")
+	@FindBy(name = "name")
 	WebElement brandNameTextBox;
 	
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/form/div[2]/div[1]/fieldset/div/div")
@@ -39,7 +41,10 @@ public class GeneralTabFactory {
 	}
 	
 	public WebElement getBrandNameTextBox() {
-		return brandNameTextBox;
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebElement brandName = wait.until(
+		ExpectedConditions.visibilityOf(brandNameTextBox));
+		return brandName;
 	}
 	
 	public WebElement getCountryDropDown() {
