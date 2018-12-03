@@ -15,7 +15,8 @@ public class TestSetupAndTearDown {
 		System.out.println("Test Started...");
 		String browserType = "firefox";
 		driver = co.indebted.mypackage.utilities.DriverFactory.open(browserType);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	@AfterMethod

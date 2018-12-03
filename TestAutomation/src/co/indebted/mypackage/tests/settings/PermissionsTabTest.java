@@ -70,6 +70,7 @@ public class PermissionsTabTest extends TestSetupAndTearDown{
 			Thread.sleep(500);
 			driver.navigate().refresh();
 			
+			//window scrolling
 			for (int second = 0;; second++) {
 		        if(second >=60){
 		            break;

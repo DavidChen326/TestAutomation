@@ -16,12 +16,12 @@ public class DebtPageFactory {
 	WebDriver driver;
 
 	//payment
-	@FindBy(id = "PaymentMenu")
-	WebElement paymentButton;
-	
+		@FindBy(id = "PaymentMenu")
+		WebElement paymentButton;
+		
 	//Hardship
-		@FindBy(xpath = "/html/body/div[3]/div/div[1]/div[5]/div[9]/div[2]/div/div/a[2]")
-		WebElement agentPortalButton;
+		@FindBy(css = "#promise_76693ee8-69d7-44c4-97e6-00a7ab987550 > div.col-md-2 > a > i")
+		WebElement applyHardshipButton;
 	
 	//agent portal
 		@FindBy(xpath = "/html/body/div[3]/div/div[1]/div[5]/div[9]/div[2]/div/div/a[2]")
@@ -187,6 +187,10 @@ public class DebtPageFactory {
 		WebElement saveAdjustmentButton;
 		
 	//return methods to test classes
+		//hardship
+		public WebElement getApplyHardshipButton() {
+			return applyHardshipButton;
+		}
 		
 		//adjustments
 		public WebElement getAdjustmentDescriptionTextBox() {

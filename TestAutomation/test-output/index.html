@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="co.indebted.mypackage.tests.portals.DebtorPortalTest" class="method navigator-link" hash-for-method="debtorPortalTest">debtorPortalTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="co.indebted.mypackage.tests.portals.HardshipAgentTest" class="method navigator-link" hash-for-method="hardshipAgentTests">hardshipAgentTests</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,21 +120,20 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">co.indebted.mypackage.tests.portals.DebtorPortalTest</span>
+              <span class="class-name">co.indebted.mypackage.tests.portals.HardshipAgentTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="debtorPortalTest">
-                  </a> <!-- debtorPortalTest -->
-                  <span class="method-name">debtorPortalTest</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to convert data to an object
+                  <a name="hardshipAgentTests">
+                  </a> <!-- hardshipAgentTests -->
+                  <span class="method-name">hardshipAgentTests</span>
+                  <div class="stack-trace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (1122.5, 805.2000122070312) is out of bounds of viewport width (1440) and height (803)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;Davids-MBP&apos;, ip: &apos;fe80:0:0:0:10a9:a5f1:b0c7:747e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.1&apos;, java.version: &apos;10.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 21124, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 28fb9ad3-c6d5-6a46-87c9-cee570216282
-*** Element info: {Using=css selector, value=#assemblyForm &gt; div &gt; div &gt; div.c014 &gt; div &gt; div:nth-child(2) &gt; div:nth-child(2) &gt; div &gt; div:nth-child(2) &gt; form &gt; div.container &gt; div &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div.col-md-2.col-xs-3.c0125}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 45836, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ae20c486-106c-cf4d-ac5c-a1ded15565d8
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -145,14 +144,10 @@ Session ID: 28fb9ad3-c6d5-6a46-87c9-cee570216282
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at co.indebted.mypackage.tests.portals.DebtorPortalTest.debtorPortalTest(DebtorPortalTest.java:118)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:614)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:640)
+	at co.indebted.mypackage.pagefactories.HardshipPageFactory.getFirstTransportFrequencyDropDown(HardshipPageFactory.java:184)
+	at co.indebted.mypackage.tests.portals.HardshipAgentTest.hardshipAgentTests(HardshipAgentTest.java:90)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -187,7 +182,7 @@ Session ID: 28fb9ad3-c6d5-6a46-87c9-cee570216282
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/5h/r82dfr4151gg3yjyrflqh_s40000gn/T/testng-eclipse-839971595/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/5h/r82dfr4151gg3yjyrflqh_s40000gn/T/testng-eclipse--765459267/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -196,7 +191,7 @@ Session ID: 28fb9ad3-c6d5-6a46-87c9-cee570216282
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;co.indebted.mypackage.tests.portals.DebtorPortalTest&quot;/&gt;
+      &lt;class name=&quot;co.indebted.mypackage.tests.portals.HardshipAgentTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -238,14 +233,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'debtorPortalTest')
-data.setCell(0, 2, 'co.indebted.mypackage.tests.portals.DebtorPortalTest')
-data.setCell(0, 3, 93097);
+data.setCell(0, 1, 'hardshipAgentTests')
+data.setCell(0, 2, 'co.indebted.mypackage.tests.portals.HardshipAgentTest')
+data.setCell(0, 3, 19904);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -271,7 +266,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">co.indebted.mypackage.tests.portals.DebtorPortalTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">co.indebted.mypackage.tests.portals.HardshipAgentTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
@@ -279,14 +274,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">debtorPortalTest</span>
-                <span class="method-start">3948 ms</span>
+                <span class="method-name">hardshipAgentTests</span>
+                <span class="method-start">3174 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">97052 ms</span>
+                <span class="method-start">23081 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
