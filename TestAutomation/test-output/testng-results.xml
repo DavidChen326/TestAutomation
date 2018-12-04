@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-12-03T02:54:20Z" name="Default suite" finished-at="2018-12-03T02:54:46Z" duration-ms="25636">
+  <suite started-at="2018-12-04T00:42:30Z" name="Default suite" finished-at="2018-12-04T00:42:58Z" duration-ms="28183">
     <groups>
     </groups>
-    <test started-at="2018-12-03T02:54:20Z" name="Default test" finished-at="2018-12-03T02:54:46Z" duration-ms="25636">
+    <test started-at="2018-12-04T00:42:30Z" name="Default test" finished-at="2018-12-04T00:42:58Z" duration-ms="28183">
       <class name="co.indebted.mypackage.tests.portals.HardshipAgentTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:co.indebted.mypackage.tests.portals.HardshipAgentTest@60015ef5]" started-at="2018-12-03T02:54:20Z" name="setUp" finished-at="2018-12-03T02:54:23Z" duration-ms="3174" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:co.indebted.mypackage.tests.portals.HardshipAgentTest@60015ef5]" started-at="2018-12-04T00:42:30Z" name="setUp" finished-at="2018-12-04T00:42:35Z" duration-ms="4736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="hardshipAgentTests()[pri:0, instance:co.indebted.mypackage.tests.portals.HardshipAgentTest@60015ef5]" started-at="2018-12-03T02:54:23Z" name="hardshipAgentTests" finished-at="2018-12-03T02:54:43Z" duration-ms="19904" status="FAIL">
+        <test-method signature="hardshipAgentTests()[pri:0, instance:co.indebted.mypackage.tests.portals.HardshipAgentTest@60015ef5]" started-at="2018-12-04T00:42:35Z" name="hardshipAgentTests" finished-at="2018-12-04T00:42:56Z" duration-ms="20714" status="FAIL">
           <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
             <message>
-              <![CDATA[(1122.5, 805.2000122070312) is out of bounds of viewport width (1440) and height (803)
+              <![CDATA[(431, -82.19999694824219) is out of bounds of viewport width (1440) and height (803)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'Davids-MBP', ip: 'fe80:0:0:0:10a9:a5f1:b0c7:747e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.1', java.version: '10.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 45836, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ae20c486-106c-cf4d-ac5c-a1ded15565d8]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 81812, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0757112f-aff8-fa4b-b6fe-c631852568e6]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (1122.5, 805.2000122070312) is out of bounds of viewport width (1440) and height (803)
+              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (431, -82.19999694824219) is out of bounds of viewport width (1440) and height (803)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'Davids-MBP', ip: 'fe80:0:0:0:10a9:a5f1:b0c7:747e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.1', java.version: '10.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 45836, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ae20c486-106c-cf4d-ac5c-a1ded15565d8
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 81812, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0757112f-aff8-fa4b-b6fe-c631852568e6
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -40,8 +40,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:614)
 at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:640)
-at co.indebted.mypackage.pagefactories.HardshipPageFactory.getFirstTransportFrequencyDropDown(HardshipPageFactory.java:184)
-at co.indebted.mypackage.tests.portals.HardshipAgentTest.hardshipAgentTests(HardshipAgentTest.java:90)
+at co.indebted.mypackage.pagefactories.HardshipPageFactory.getReasonDropDown(HardshipPageFactory.java:227)
+at co.indebted.mypackage.tests.portals.HardshipAgentTest.hardshipAgentTests(HardshipAgentTest.java:105)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -73,7 +73,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hardshipAgentTests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:co.indebted.mypackage.tests.portals.HardshipAgentTest@60015ef5]" started-at="2018-12-03T02:54:43Z" name="tearDown" finished-at="2018-12-03T02:54:46Z" duration-ms="2534" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:co.indebted.mypackage.tests.portals.HardshipAgentTest@60015ef5]" started-at="2018-12-04T00:42:56Z" name="tearDown" finished-at="2018-12-04T00:42:58Z" duration-ms="2710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -59,23 +59,14 @@ public class HardshipPageFactory {
 	@FindBy(name = "expenses[0].accommodation.0.cost_cents")
 	WebElement accommodationCostTextBox;
 	
-	@FindBy(css = "#hardship_form > div > div.paperBody > div > div:nth-child(2) > div > form > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(4) > div > fieldset > div")
-	WebElement accommodationFrequencyDropDown;
-	
 	@FindBy(name = "expenses[2].transport.0.cost_cents")
 	WebElement firstTransportCostTextBox;
 	
-	@FindBy(css = "#hardship_form > div > div.paperBody > div > div:nth-child(2) > div > form > div:nth-child(3) > div:nth-child(2) > div:nth-child(4) > div > div:nth-child(4) > div > fieldset > div")
-	WebElement firstTransportFrequencyDropDown;
-	
-	@FindBy(name = "#hardship_form > div > div.paperBody > div > div:nth-child(2) > div > form > div:nth-child(3) > div:nth-child(2) > div:nth-child(4) > div > img")
+	@FindBy(css = "#hardship_form > div > div.paperBody > div > div:nth-child(2) > div > form > div:nth-child(3) > div:nth-child(2) > div:nth-child(4) > div > img")
 	WebElement transportAddButton;
 	
 	@FindBy(name = "expenses[2].transport.1.cost_cents")
 	WebElement secondTransportCostTextBox;
-	
-	@FindBy(css = "#hardship_form > div > div.paperBody > div > div:nth-child(2) > div > form > div:nth-child(3) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(4) > div > fieldset > div")
-	WebElement secondTransportFrequencyDropDown;
 	
 	//step 2 liabities
 	@FindBy(name = "liabilities[0].credit_card.0.institution")
@@ -86,9 +77,6 @@ public class HardshipPageFactory {
 	
 	@FindBy(name = "liabilities[0].credit_card.0.cost_cents")
 	WebElement creditCardCost;
-	
-	@FindBy(css = "#hardship_form > div > div.paperBody > div > div:nth-child(2) > div > form > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > fieldset > div.Select.c0111.has-value.is-clearable.is-searchable.Select--single")
-	WebElement creditCardFrequencyDropDown;
 	
 	@FindBy(css = "#hardship_form > div > div.paperBody > div > div:nth-child(2) > div > form > div:nth-child(5) > div:nth-child(2) > button")
 	WebElement nextStep3Button;
@@ -203,32 +191,8 @@ public class HardshipPageFactory {
 		return accommodationCostTextBox;
 	}
 	
-	public void getAccommodationFrequencyDropDown() {
-		//scroll into view
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", accommodationFrequencyDropDown);
-		
-		//select an option from React dropdown compoment
-		Actions act = new Actions(driver);
-		act.click(accommodationFrequencyDropDown).build().perform();
-		List<WebElement> selectFrequency = driver.findElements(By.className("Select-value"));
-		WebElement thirdFrequency = selectFrequency.get(2);
-		act.click(thirdFrequency).build().perform();
-	}
-	
 	public WebElement getFirstTransportCostTextBox() {
 		return firstTransportCostTextBox;
-	}
-	
-	public void getFirstTransportFrequencyDropDown() {		
-		//scroll into view
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", firstTransportFrequencyDropDown);
-				
-		//select an option from React dropdown compoment
-		Actions act = new Actions(driver);
-		act.click(firstTransportFrequencyDropDown).build().perform();
-		List<WebElement> selectFrequency = driver.findElements(By.className("Select-value"));
-		WebElement thirdFrequency = selectFrequency.get(2);
-		act.click(thirdFrequency).build().perform();
 	}
 	
 	public WebElement getTransportAddButton() {
@@ -237,15 +201,6 @@ public class HardshipPageFactory {
 	
 	public WebElement getSecondTransportCostTextBox() {
 		return secondTransportCostTextBox;
-	}
-	
-	public void getSecondTransportFrequencyDropDown() {
-		//select an option from React dropdown compoment
-		Actions act = new Actions(driver);
-		act.click(secondTransportFrequencyDropDown).build().perform();
-		List<WebElement> selectFrequency = driver.findElements(By.className("Select-value"));
-		WebElement firstFrequency = selectFrequency.get(0);
-		act.click(firstFrequency).build().perform();
 	}
 	
 	//step 2 liabities
@@ -259,15 +214,6 @@ public class HardshipPageFactory {
 	
 	public WebElement getCreditCardCost() {
 		return creditCardCost;
-	}
-	
-	public void getCreditCardFrequencyDropDown() {
-		//select an option from React dropdown compoment
-		Actions act = new Actions(driver);
-		act.click(creditCardFrequencyDropDown).build().perform();
-		List<WebElement> selectFrequency = driver.findElements(By.className("Select-value"));
-		WebElement forthFrequency = selectFrequency.get(3);
-		act.click(forthFrequency).build().perform();
 	}
 	
 	public WebElement getNextStep3Button() {

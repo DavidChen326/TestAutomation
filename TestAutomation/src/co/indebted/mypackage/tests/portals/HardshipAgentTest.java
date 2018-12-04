@@ -21,7 +21,6 @@ public class HardshipAgentTest extends TestSetupAndTearDown{
 		driver.get("https://app.indebted-staging.co/debts/2448");
 		DebtPageFactory debtPage = new DebtPageFactory(driver);
 		HardshipPageFactory hardshipPage = new HardshipPageFactory(driver);
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		
 		//assertions
 		//test 1
@@ -83,29 +82,13 @@ public class HardshipAgentTest extends TestSetupAndTearDown{
 			hardshipPage.getAccommodationCostTextBox().sendKeys("800");
 			Thread.sleep(500);
 			
-			//select monthly
-			hardshipPage.getAccommodationFrequencyDropDown();
-			Thread.sleep(500);
-			
 			hardshipPage.getFirstTransportCostTextBox().sendKeys("200");
-			
-			//select monthly
-			hardshipPage.getFirstTransportFrequencyDropDown();
-			Thread.sleep(500);
-			
+			hardshipPage.getTransportAddButton().click();
 			hardshipPage.getSecondTransportCostTextBox().sendKeys("50");
-			
-			//select weekly
-			hardshipPage.getSecondTransportFrequencyDropDown();
-			Thread.sleep(500);
 			
 			hardshipPage.getCreditCardInstitution().sendKeys("Westpac");
 			hardshipPage.getCreditCardBalanceOwing().sendKeys("10000");
-			hardshipPage.getCreditCardCost().sendKeys("10000");
-			
-			//select yearly
-			hardshipPage.getCreditCardFrequencyDropDown();
-			Thread.sleep(500);
+			hardshipPage.getCreditCardCost().sendKeys("700");
 			
 			hardshipPage.getNextStep3Button().click();
 			Assert.assertEquals(hardshipPage.getReasonDescription().isDisplayed(), true);
@@ -131,7 +114,7 @@ public class HardshipAgentTest extends TestSetupAndTearDown{
 			hardshipPage.getEstimatedDate().sendKeys("12/12/2019");
 			
 			//file upload
-			hardshipPage.getFileUploadBox().click();
+			hardshipPage.getFileUploadBox().sendKeys("/Users/davidchen/Documents/Test/postman cheat sheet.pdf");
 			
 			hardshipPage.getRelevantInfo().sendKeys("Test");
 			hardshipPage.getNextStep4Button().click();
