@@ -1,4 +1,4 @@
-package co.indebted.mypackage.pagefactories;
+package co.indebted.mypackage.pagefactories.explore;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

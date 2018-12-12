@@ -1,11 +1,11 @@
-package co.indebted.mypackage.tests;
+package co.indebted.mypackage.tests.general;
 
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
-import co.indebted.mypackage.pagefactories.LoginPageFactory;
-import co.indebted.mypackage.pagefactories.ResetPageFactory;
-import co.indebted.mypackage.pagefactories.ResetSuccessfulPageFactory;
+import co.indebted.mypackage.pagefactories.general.LoginPageFactory;
+import co.indebted.mypackage.pagefactories.general.ResetPageFactory;
+import co.indebted.mypackage.pagefactories.general.ResetSuccessfulPageFactory;
 import co.indebted.mypackage.utilities.TestSetupAndTearDown;
 
 public class ResetPasswordTest extends TestSetupAndTearDown{

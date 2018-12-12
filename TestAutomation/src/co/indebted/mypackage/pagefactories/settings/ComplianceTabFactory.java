@@ -17,9 +17,6 @@ public class ComplianceTabFactory {
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div/img")
 	WebElement newComplianceButton;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[1]/div[1]/div/fieldset/div/input")
-	WebElement complianceNameTextBox;
-	
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[1]/div[2]/div[1]/div[1]/fieldset/div/input")
 	WebElement maxInSpreadNumberTextBox;
 	
@@ -93,10 +90,6 @@ public class ComplianceTabFactory {
 	
 	public WebElement getNewComplianceButton() {
 		return newComplianceButton;
-	}
-	
-	public WebElement getcomplianceNameTextBox() {
-		return complianceNameTextBox;
 	}
 	
 	public WebElement getMaxInSpreadNumberTextBox() {

@@ -14,8 +14,14 @@ public class GeneralTabFactory {
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[1]/a")
 	WebElement generalTab;
 	
-	@FindBy(name = "name")
-	WebElement brandNameTextBox;
+	@FindBy(name = "legal_name")
+	WebElement legalNameTextBox;
+	
+	@FindBy(name = "email_display_name")
+	WebElement emailDisplayNameTextBox;
+	
+	@FindBy(name = "bcc_emails")
+	WebElement bccEmailsTextBox;
 	
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/form/div[2]/div[1]/fieldset/div/div")
 	WebElement countryDropDown;
@@ -40,11 +46,19 @@ public class GeneralTabFactory {
 		return generalTab;
 	}
 	
-	public WebElement getBrandNameTextBox() {
+	public WebElement getLegalNameTextBox() {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		WebElement brandName = wait.until(
-		ExpectedConditions.visibilityOf(brandNameTextBox));
+		ExpectedConditions.visibilityOf(legalNameTextBox));
 		return brandName;
+	}
+	
+	public WebElement getEmailDisplayNameTextBox() {
+		return emailDisplayNameTextBox;
+	}
+	
+	public WebElement getBCCEmailsTextBox() {
+		return bccEmailsTextBox;
 	}
 	
 	public WebElement getCountryDropDown() {

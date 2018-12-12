@@ -3,7 +3,7 @@ package co.indebted.mypackage.tests.settings;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import co.indebted.mypackage.pagefactories.ExplorePageFactory;
+import co.indebted.mypackage.pagefactories.explore.ExplorePageFactory;
 import co.indebted.mypackage.pagefactories.settings.SettingsPageFactory;
 import co.indebted.mypackage.utilities.LoginFactory;
 import co.indebted.mypackage.utilities.TestSetupAndTearDown;
@@ -54,14 +54,23 @@ public class SettingsTest extends TestSetupAndTearDown{
 		
 		//test 4
 		try {
-			Assert.assertEquals(settingsPage.getPermisionsTab().isDisplayed(), true);
+			Assert.assertEquals(settingsPage.getRolesTab().isDisplayed(), true);
 		}
 		catch(AssertionError ex){
-			System.out.println("Error: Permisions Tab not found");
+			System.out.println("Error: Roles Tab not found");
 		    throw ex;
 		}
 		
 		//test 5
+		try {
+			Assert.assertEquals(settingsPage.getTeamsTab().isDisplayed(), true);
+		}
+		catch(AssertionError ex){
+			System.out.println("Error: Teams Tab not found");
+		    throw ex;
+		}
+		
+		//test 6
 		try {
 			Assert.assertEquals(settingsPage.getUsersTab().isDisplayed(), true);
 		}
@@ -70,5 +79,49 @@ public class SettingsTest extends TestSetupAndTearDown{
 		    throw ex;
 		}
 		
+		//test 7
+		try {
+			Assert.assertEquals(settingsPage.getAssistTab().isDisplayed(), true);
+		}
+		catch(AssertionError ex){
+			System.out.println("Error: Assist Tab not found");
+		    throw ex;
+		}
+		
+		//test 8
+		try {
+			Assert.assertEquals(settingsPage.getDebtsTab().isDisplayed(), true);
+		}
+		catch(AssertionError ex){
+			System.out.println("Error: Debts Tab not found");
+		    throw ex;
+		}
+		
+		//test 9
+		try {
+			Assert.assertEquals(settingsPage.getInboxTab().isDisplayed(), true);
+		}
+		catch(AssertionError ex){
+			System.out.println("Error: Inbox Tab not found");
+		    throw ex;
+		}
+		
+		//test 10
+		try {
+			Assert.assertEquals(settingsPage.getBuildTab().isDisplayed(), true);
+		}
+		catch(AssertionError ex){
+			System.out.println("Error: Build Tab not found");
+		    throw ex;
+		}
+		
+		//test 11
+		try {
+			Assert.assertEquals(settingsPage.getContactsTab().isDisplayed(), true);
+		}
+		catch(AssertionError ex){
+			System.out.println("Error: Contacts Tab not found");
+		    throw ex;
+		}
 	}
 }

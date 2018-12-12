@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import co.indebted.mypackage.pagefactories.ExplorePageFactory;
+import co.indebted.mypackage.pagefactories.explore.ExplorePageFactory;
 import co.indebted.mypackage.utilities.LoginFactory;
 
 public class LoginTestDDT_Excel {

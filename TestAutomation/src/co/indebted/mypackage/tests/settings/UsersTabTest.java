@@ -3,7 +3,7 @@ package co.indebted.mypackage.tests.settings;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import co.indebted.mypackage.pagefactories.ExplorePageFactory;
+import co.indebted.mypackage.pagefactories.explore.ExplorePageFactory;
 import co.indebted.mypackage.pagefactories.settings.UsersTabFactory;
 import co.indebted.mypackage.utilities.LoginFactory;
 import co.indebted.mypackage.utilities.TestSetupAndTearDown;

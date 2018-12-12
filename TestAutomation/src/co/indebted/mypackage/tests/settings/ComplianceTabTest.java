@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import co.indebted.mypackage.pagefactories.ExplorePageFactory;
+import co.indebted.mypackage.pagefactories.explore.ExplorePageFactory;
 import co.indebted.mypackage.pagefactories.settings.ComplianceTabFactory;
 import co.indebted.mypackage.utilities.LoginFactory;
 import co.indebted.mypackage.utilities.TestSetupAndTearDown;
@@ -30,7 +30,6 @@ public class ComplianceTabTest extends TestSetupAndTearDown{
 		try {		
 			complianceTab.getComplianceTab().click();
 			complianceTab.getNewComplianceButton().click();
-			complianceTab.getcomplianceNameTextBox().sendKeys(newCompliance.complianceName);
 			complianceTab.getMaxInSpreadNumberTextBox().clear();
 			complianceTab.getMaxInSpreadNumberTextBox().sendKeys("6");
 			complianceTab.getMaxInSpreadDaysTextBox().clear();

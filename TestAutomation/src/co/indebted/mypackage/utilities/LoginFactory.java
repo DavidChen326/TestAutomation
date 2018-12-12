@@ -3,7 +3,7 @@ package co.indebted.mypackage.utilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import co.indebted.mypackage.pagefactories.LoginPageFactory;
+import co.indebted.mypackage.pagefactories.general.LoginPageFactory;
 
 public class LoginFactory {
 	

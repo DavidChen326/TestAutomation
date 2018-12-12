@@ -1,9 +1,9 @@
-package co.indebted.mypackage.tests;
+package co.indebted.mypackage.tests.general;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import co.indebted.mypackage.pagefactories.ExplorePageFactory;
+import co.indebted.mypackage.pagefactories.explore.ExplorePageFactory;
 import co.indebted.mypackage.utilities.LoginFactory;
 import co.indebted.mypackage.utilities.TestSetupAndTearDown;
 

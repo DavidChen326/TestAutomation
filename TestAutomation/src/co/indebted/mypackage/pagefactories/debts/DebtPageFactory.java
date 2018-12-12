@@ -48,10 +48,10 @@ public class DebtPageFactory {
 		WebElement agentPortalBPayTab;
 		
 	//agent portal steps 2 payment method --> existing methods
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > form > div.container > div > div:nth-child(2) > div:nth-child(1) > div.col-md-2.col-xs-3.c0121")
+		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > form > div.container > div > div:nth-child(2) > div:nth-child(1) > div.col-md-2.col-xs-3.c0122")
 		WebElement agentPortalExistingCreditCard;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > form > div.container > div > div:nth-child(2) > div:nth-child(1) > div.col-md-2.col-xs-2.c0121")
+		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > form > div.container > div > div:nth-child(2) > div:nth-child(1) > div.col-md-2.col-xs-2.c0122")
 		WebElement agentPortalExistingBank;
 		
 	//agent portal step 3

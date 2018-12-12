@@ -11,8 +11,7 @@ import org.junit.runners.Parameterized.Parameters;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-
-import co.indebted.mypackage.pagefactories.ExplorePageFactory;
+import co.indebted.mypackage.pagefactories.explore.ExplorePageFactory;
 import co.indebted.mypackage.utilities.LoginFactory;
 
 @RunWith(value = Parameterized.class)

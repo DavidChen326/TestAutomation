@@ -1,4 +1,4 @@
-package co.indebted.mypackage.pagefactories;
+package co.indebted.mypackage.pagefactories.assist;
 
 import java.util.List;
 

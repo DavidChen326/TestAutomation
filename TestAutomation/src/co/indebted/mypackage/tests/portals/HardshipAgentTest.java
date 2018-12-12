@@ -6,7 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import co.indebted.mypackage.pagefactories.HardshipPageFactory;
+import co.indebted.mypackage.pagefactories.assist.HardshipPageFactory;
 import co.indebted.mypackage.pagefactories.debts.DebtPageFactory;
 import co.indebted.mypackage.utilities.LoginFactory;
 import co.indebted.mypackage.utilities.TestSetupAndTearDown;

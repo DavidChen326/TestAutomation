@@ -9,17 +9,35 @@ public class SettingsPageFactory {
 
 	WebDriver driver;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[1]/a")
+	@FindBy(css = "#app > div > div.c012 > li:nth-child(1) > a")
 	WebElement generalTab;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[2]/a")
+	@FindBy(css = "#app > div > div.c012 > li:nth-child(2) > a")
 	WebElement complianceTab;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[3]/a")
-	WebElement permissionsTab;
+	@FindBy(css = "#app > div > div.c012 > li:nth-child(3) > a")
+	WebElement rolesTab;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[4]/a")
+	@FindBy(css = "#app > div > div.c012 > li:nth-child(4) > a")
+	WebElement teamsTab;
+	
+	@FindBy(css = "#app > div > div.c012 > li:nth-child(5) > a")
 	WebElement usersTab;
+	
+	@FindBy(css = "#app > div > div.c012 > li:nth-child(6) > a")
+	WebElement assistTab;
+	
+	@FindBy(css = "#app > div > div.c012 > li:nth-child(7) > a")
+	WebElement debtsTab;
+	
+	@FindBy(css = "#app > div > div.c012 > li:nth-child(8) > a")
+	WebElement inboxTab;
+	
+	@FindBy(css = "#app > div > div.c012 > li:nth-child(9) > a")
+	WebElement buildTab;
+	
+	@FindBy(css = "#app > div > div.c012 > li:nth-child(10) > a")
+	WebElement contactsTab;
 
 	//steps
 	public String getTitle() {
@@ -34,12 +52,36 @@ public class SettingsPageFactory {
 		return complianceTab;
 	}
 	
-	public WebElement getPermisionsTab() {
-		return permissionsTab;
+	public WebElement getRolesTab() {
+		return rolesTab;
+	}
+	
+	public WebElement getTeamsTab() {
+		return teamsTab;
 	}
 	
 	public WebElement getUsersTab() {
 		return usersTab;
+	}
+	
+	public WebElement getAssistTab() {
+		return assistTab;
+	}
+	
+	public WebElement getDebtsTab() {
+		return debtsTab;
+	}
+	
+	public WebElement getInboxTab() {
+		return inboxTab;
+	}
+	
+	public WebElement getBuildTab() {
+		return buildTab;
+	}
+	
+	public WebElement getContactsTab() {
+		return contactsTab;
 	}
 	
 	//constructor

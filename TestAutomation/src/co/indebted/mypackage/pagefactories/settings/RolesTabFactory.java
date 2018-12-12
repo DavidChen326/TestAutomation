@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class PermissionsTabFactory {
+public class RolesTabFactory {
 
 	WebDriver driver;
 	
@@ -63,7 +63,7 @@ public class PermissionsTabFactory {
 	public List<WebElement> getRolesList() {
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		List<WebElement> list = wait.until(
-		        ExpectedConditions.visibilityOfAllElements(rolesList));
+		ExpectedConditions.visibilityOfAllElements(rolesList));
 		return list;
 	}
 	
@@ -88,7 +88,7 @@ public class PermissionsTabFactory {
 	}
 	
 	//constructor
-	public PermissionsTabFactory (WebDriver driver) {
+	public RolesTabFactory (WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}

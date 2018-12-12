@@ -5,15 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import co.indebted.mypackage.pagefactories.ExplorePageFactory;
-import co.indebted.mypackage.pagefactories.settings.PermissionsTabFactory;
+import co.indebted.mypackage.pagefactories.explore.ExplorePageFactory;
+import co.indebted.mypackage.pagefactories.settings.RolesTabFactory;
 import co.indebted.mypackage.utilities.LoginFactory;
 import co.indebted.mypackage.utilities.TestSetupAndTearDown;
 
-public class PermissionsTabTest extends TestSetupAndTearDown{
+public class RolesTabTest extends TestSetupAndTearDown{
 	
 	@Test
-	public void PermissionsTabTests() throws InterruptedException {
+	public void RolesTabTests() throws InterruptedException {
 				
 		//login and navigate to Compliance tab
 		LoginFactory loginFactory = new LoginFactory(driver);
@@ -22,7 +22,7 @@ public class PermissionsTabTest extends TestSetupAndTearDown{
 		ExplorePageFactory explorePage = new ExplorePageFactory(driver);
 		explorePage.clickSettings();
 		
-		PermissionsTabFactory permissionsTab = new PermissionsTabFactory(driver);
+		RolesTabFactory permissionsTab = new RolesTabFactory(driver);
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		Role newRole = new Role("Tester19");
 		boolean roleExist = false;

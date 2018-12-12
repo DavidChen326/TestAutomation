@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="co.indebted.mypackage.tests.portals.HardshipAgentTest">
+      <class name="co.indebted.mypackage.tests.settings.TeamsTabTest">
         <methods>
-          <include name="hardshipAgentTests"/>
           <include name="setUp"/>
+          <include name="TeamsTabTests"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- co.indebted.mypackage.tests.portals.HardshipAgentTest -->
+      </class> <!-- co.indebted.mypackage.tests.settings.TeamsTabTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
