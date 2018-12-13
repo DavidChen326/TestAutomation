@@ -2,7 +2,6 @@ package co.indebted.mypackage.tests.portals;
 
 import java.util.ArrayList;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

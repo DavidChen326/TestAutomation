@@ -14,7 +14,7 @@ public class TeamsTabTest extends TestSetupAndTearDown{
 	@Test
 	public void TeamsTabTests() throws InterruptedException {
 				
-		//login and navigate to Compliance tab
+		//login and navigate to Teams tab
 		LoginFactory loginFactory = new LoginFactory(driver);
 		loginFactory.login();
 		
@@ -61,7 +61,7 @@ public class TeamsTabTest extends TestSetupAndTearDown{
 	}
 	
 	
-	//team constructor
+	//teams constructor
 	public class Team{
 		public String teamName;
 		public String teamDescription;

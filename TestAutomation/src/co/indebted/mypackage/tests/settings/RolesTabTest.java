@@ -15,7 +15,7 @@ public class RolesTabTest extends TestSetupAndTearDown{
 	@Test
 	public void RolesTabTests() throws InterruptedException {
 				
-		//login and navigate to Compliance tab
+		//login and navigate to Roles tab
 		LoginFactory loginFactory = new LoginFactory(driver);
 		loginFactory.login();
 		
@@ -26,6 +26,7 @@ public class RolesTabTest extends TestSetupAndTearDown{
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		Role newRole = new Role("Tester19");
 		boolean roleExist = false;
+		
 		//assertions
 		//test 1
 		try {		
@@ -85,7 +86,7 @@ public class RolesTabTest extends TestSetupAndTearDown{
 		}
 	}
 	
-	//role constructor
+	//roles constructor
 	public class Role{
 		public String roleName;
 		

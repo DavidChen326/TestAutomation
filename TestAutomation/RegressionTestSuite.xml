@@ -7,13 +7,13 @@
   
   <test thread-count="5" name="LogIn">
     <classes>
-      <class name="co.indebted.mypackage.tests.LoginTest"/>
+      <class name="co.indebted.mypackage.tests.general.LoginTest"/>
     </classes>
   </test> <!-- logIn -->
   
     <test thread-count="5" name="ResetPassword">
     <classes>
-      <class name="co.indebted.mypackage.tests.ResetPasswordTest"/>
+      <class name="co.indebted.mypackage.tests.general.ResetPasswordTest"/>
     </classes>
   </test> <!-- ResetPassword -->
   
@@ -28,8 +28,14 @@
       <class name="co.indebted.mypackage.tests.settings.SettingsTest"/>
       <class name="co.indebted.mypackage.tests.settings.GeneralTabTest"/>
       <class name="co.indebted.mypackage.tests.settings.ComplianceTabTest"/>
-      <class name="co.indebted.mypackage.tests.settings.PermissionsTabTest"/>
+      <class name="co.indebted.mypackage.tests.settings.RolesTabTest"/>
+      <class name="co.indebted.mypackage.tests.settings.TeamsTabTest"/>
       <class name="co.indebted.mypackage.tests.settings.UsersTabTest"/>
+      <class name="co.indebted.mypackage.tests.settings.AssistTabTest"/>
+      <class name="co.indebted.mypackage.tests.settings.DebtsTabTest"/>
+      <class name="co.indebted.mypackage.tests.settings.InboxTabTest"/>
+      <class name="co.indebted.mypackage.tests.settings.BuildTabTest"/>
+      <class name="co.indebted.mypackage.tests.settings.ContactsTabTest"/>
     </classes>
   </test>
     
@@ -37,6 +43,7 @@
     <classes>
       <class name="co.indebted.mypackage.tests.portals.AgentPortalTest"/>
       <class name="co.indebted.mypackage.tests.portals.DebtorPortalTest"/>
+      <class name="co.indebted.mypackage.tests.portals.HardshipAgentTest"/>
     </classes>
   </test> <!-- Analyse -->
   

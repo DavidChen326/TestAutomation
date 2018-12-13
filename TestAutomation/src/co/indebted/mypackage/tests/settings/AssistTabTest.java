@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 import co.indebted.mypackage.pagefactories.explore.ExplorePageFactory;
 import co.indebted.mypackage.pagefactories.settings.AssistTabFactory;
-import co.indebted.mypackage.pagefactories.settings.UsersTabFactory;
 import co.indebted.mypackage.utilities.LoginFactory;
 import co.indebted.mypackage.utilities.RandomStringGenerator;
 import co.indebted.mypackage.utilities.TestSetupAndTearDown;
@@ -15,7 +14,7 @@ public class AssistTabTest extends TestSetupAndTearDown{
 	@Test
 	public void AssistTabTests() throws InterruptedException {
 				
-		//login and navigate to Compliance tab
+		//login and navigate to Assist tab
 		LoginFactory loginFactory = new LoginFactory(driver);
 		loginFactory.login();
 		
@@ -25,12 +24,13 @@ public class AssistTabTest extends TestSetupAndTearDown{
 		RandomStringGenerator randomStringGenerator = new RandomStringGenerator();
 		
 		AssistTabFactory assistTab = new AssistTabFactory(driver);
-		Hardship assist = new Hardship(randomStringGenerator.randomString(20));
+		Hardship hardship = new Hardship(randomStringGenerator.randomString(20));
+		HardshipStage hardshipStage = new HardshipStage(randomStringGenerator.randomString(5),randomStringGenerator.randomString(5));
 		
 		//assertions
 		//test 1
 		try {
-			String hardshipAcknowledgement = assist.hardshipAcknowledgement;
+			String hardshipAcknowledgement = hardship.hardshipAcknowledgement;
 			assistTab.getAssistTab().click();
 			assistTab.getAcknowledgementTextField().clear();
 			assistTab.getAcknowledgementTextField().sendKeys(hardshipAcknowledgement);
@@ -47,13 +47,13 @@ public class AssistTabTest extends TestSetupAndTearDown{
 		
 		//test 2
 		try {
-			String hardshipStageName = randomStringGenerator.randomString(5);
+			String hardshipStageName = hardshipStage.hardshipStageName;
 			assistTab.getNewHardshipStageButton().click();
 			assistTab.getHardshipStageName().sendKeys(hardshipStageName);
 			assistTab.getHardshipStageDescription().sendKeys(randomStringGenerator.randomString(5));
 			assistTab.getHardshipStateOfStageDropDown();
 			Thread.sleep(500);
-			assistTab.getAcknowledgementSaveButton().click();
+			assistTab.getHardshipStageSaveButton().click();
 			Assert.assertEquals(assistTab.getFirstHardshipStageName(), hardshipStageName);
 			Thread.sleep(1000);
 		}
@@ -64,12 +64,12 @@ public class AssistTabTest extends TestSetupAndTearDown{
 		
 		//test 3
 		try {
-			String updatedHardshipStageName = randomStringGenerator.randomString(5);
-			assistTab.getFirstHardshipStageNameEditButton().click();
+			String updatedHardshipStageName = hardshipStage.hardshipStageName;
+			assistTab.getFirstHardshipStageEditButton().click();
 			assistTab.getHardshipStageName().sendKeys(updatedHardshipStageName);
 			assistTab.getHardshipStageDescription().sendKeys(randomStringGenerator.randomString(5));
 			Thread.sleep(500);
-			assistTab.getAcknowledgementSaveButton().click();
+			assistTab.getHardshipStageSaveButton().click();
 			Assert.assertEquals(assistTab.getFirstHardshipStageName(), updatedHardshipStageName);
 			Thread.sleep(1000);
 		}
@@ -79,11 +79,21 @@ public class AssistTabTest extends TestSetupAndTearDown{
 		}
 	}
 	
-	//user constructor
-		public class Hardship{
-			public String hardshipAcknowledgement;
-			public Hardship(String acknowledgement) {
+	//hardship constructor
+	public class Hardship{
+		public String hardshipAcknowledgement;
+		public Hardship(String acknowledgement) {
 				hardshipAcknowledgement = acknowledgement;
-			}
 		}
+	}
+	
+	//hardship stage constructor
+	public class HardshipStage{
+		public String hardshipStageName;
+		public String hardshipStageDescription;
+		public HardshipStage(String name, String description) {
+			hardshipStageName = name;
+			hardshipStageDescription = description;
+		}
+	}
 }

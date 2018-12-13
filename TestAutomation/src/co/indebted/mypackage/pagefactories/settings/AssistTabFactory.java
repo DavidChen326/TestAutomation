@@ -35,13 +35,13 @@ public class AssistTabFactory {
 	WebElement hardshipStateOfStageDropDown;
 	
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[4]/div/div/div[2]/div/form/div[2]/div[2]/button")
-	WebElement hardshipSaveButton;
+	WebElement hardshipStageSaveButton;
 	
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[3]/div[2]/div[1]/div[1]")
 	WebElement firstHardshipStageName;
 	
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[3]/div[2]/div[2]/img")
-	WebElement firstHardshipStageNameEditButton;
+	WebElement firstHardshipStageEditButton;
 	
 	//get elements
 	public WebElement getAssistTab() {
@@ -72,8 +72,8 @@ public class AssistTabFactory {
 		return firstHardshipStageName;
 	}
 	
-	public WebElement getFirstHardshipStageNameEditButton() {
-		return firstHardshipStageNameEditButton;
+	public WebElement getFirstHardshipStageEditButton() {
+		return firstHardshipStageEditButton;
 	}
 
 	public void getHardshipStateOfStageDropDown() {
@@ -83,6 +83,10 @@ public class AssistTabFactory {
 		List<WebElement> selectState = driver.findElements(By.className("Select-input"));
 		WebElement firstState = selectState.get(0);
 		act.click(firstState).build().perform();
+	}
+	
+	public WebElement getHardshipStageSaveButton() {
+		return hardshipStageSaveButton;
 	}
 	
 	//constructor

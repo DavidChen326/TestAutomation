@@ -12,9 +12,9 @@ import co.indebted.mypackage.utilities.TestSetupAndTearDown;
 public class UsersTabTest extends TestSetupAndTearDown{
 	
 	@Test
-	public void PermissionsTabTests() throws InterruptedException {
+	public void UsersTabTests() throws InterruptedException {
 				
-		//login and navigate to Compliance tab
+		//login and navigate to Users tab
 		LoginFactory loginFactory = new LoginFactory(driver);
 		loginFactory.login();
 		
