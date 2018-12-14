@@ -11,11 +11,17 @@
     </classes>
   </test> <!-- logIn -->
   
-    <test thread-count="5" name="ResetPassword">
+  <test thread-count="5" name="ResetPassword">
     <classes>
       <class name="co.indebted.mypackage.tests.general.ResetPasswordTest"/>
     </classes>
   </test> <!-- ResetPassword -->
+  
+  <test thread-count="5" name="debts">
+    <classes>
+      <class name="co.indebted.mypackage.tests.debts.AdjustmentTest"/>
+    </classes>
+  </test> <!-- debts -->
   
   <test thread-count="5" name="Analyse">
     <classes>
@@ -37,7 +43,7 @@
       <class name="co.indebted.mypackage.tests.settings.BuildTabTest"/>
       <class name="co.indebted.mypackage.tests.settings.ContactsTabTest"/>
     </classes>
-  </test>
+  </test> <!-- Settings -->
     
   <test thread-count="5" name="Portals">
     <classes>
@@ -45,6 +51,6 @@
       <class name="co.indebted.mypackage.tests.portals.DebtorPortalTest"/>
       <class name="co.indebted.mypackage.tests.portals.HardshipAgentTest"/>
     </classes>
-  </test> <!-- Analyse -->
+  </test> <!-- Portals -->
   
 </suite> <!-- Suite -->

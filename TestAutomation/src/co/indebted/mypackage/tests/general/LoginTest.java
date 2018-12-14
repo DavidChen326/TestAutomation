@@ -22,7 +22,7 @@ public class LoginTest extends TestSetupAndTearDown{
 			Assert.assertEquals(title, "Explore • InDebted");
 		}
 		catch(AssertionError ex){
-			System.out.println("Error: P{age title doesn't match");
+			System.out.println("Error: Page title doesn't match");
 		    throw ex;
 		}
 	}
