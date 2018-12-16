@@ -11,76 +11,82 @@ public class ComplianceTabFactory {
 
 	WebDriver driver;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[2]/a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[2]/a")
 	WebElement complianceTab;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div/img")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[1]/div/div[1]/div/img")
 	WebElement newComplianceButton;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[1]/div[2]/div[1]/div[1]/fieldset/div/input")
+	@FindBy(name = "name")
+	WebElement newComplianceName;
+	
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[1]/div/div[2]/div/li/form/div[2]/img[2]")
+	WebElement newComplianceAddButton;
+	
+	@FindBy(name = "nbr")
 	WebElement maxInSpreadNumberTextBox;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[1]/div[2]/div[1]/div[2]/fieldset/div/input")
+	@FindBy(name = "days")
 	WebElement maxInSpreadDaysTextBox;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[1]/div[2]/div[2]/div[1]/fieldset/div/input")
+	@FindBy(name = "max_per_week")
 	WebElement maxPerWeekTextBox;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[1]/div[2]/div[2]/div[2]/fieldset/div/input")
+	@FindBy(name = "max_per_month")
 	WebElement maxPerMonthTextBox;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[1]/div[3]/div/div[1]/fieldset/div/input")
+	@FindBy(name = "hour")
 	WebElement defaultBumpTimeHourTextBox;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[1]/div[3]/div/div[2]/fieldset/div/input")
+	@FindBy(name = "min")
 	WebElement defaultBumpTimeMinTextBox;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[1]/div[3]/div/div[3]/fieldset/div/input")
+	@FindBy(name = "sec")
 	WebElement defaultBumpTimeSecTextBox;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[1]/li[1]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[1]/li[1]")
 	WebElement TODbutton;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[1]/li[2]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[1]/li[2]")
 	WebElement DOWbutton;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[1]/li[3]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[1]/li[3]")
 	WebElement DOMbutton;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[1]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[1]")
 	WebElement blockersLabel;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div/div/div[15]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div/div/div[15]")
 	WebElement TODblock15;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div/div/div[39]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div/div/div[39]")
 	WebElement TODblock39;
 
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div[1]/div[2]/div/div[15]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div[1]/div[2]/div/div[15]")
 	WebElement DOWMondayBlock15;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div[1]/div[2]/div/div[39]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div[1]/div[2]/div/div[39]")
 	WebElement DOWMondayBlock39;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div[3]/div[2]/div/div[15]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div[3]/div[2]/div/div[15]")
 	WebElement DOWWednesdayBlock15;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div[3]/div[2]/div/div[39]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div[3]/div[2]/div/div[39]")
 	WebElement DOWWednesdayBlock39;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div/fieldset/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[4]/td[6]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div/fieldset/div/div/div/div[2]/div[2]/div/div[2]/div/table/tbody/tr[5]/td[6]")
 	WebElement DOMBlock;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div/div/div/div[15]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div/div/div/div[15]")
 	WebElement DOMBlock15;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div/div/div/div[39]")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[2]/fieldset/div/div[2]/div/div[2]/div/div/div/div[39]")
 	WebElement DOMBlock39;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[2]/div/form/div[3]/div/button")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[2]/div/form/div[3]/div[2]/button")
 	WebElement saveComplianceButton;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[1]/div/div[2]/div")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[3]/div[1]/div/div[2]/div")
 	List<WebElement> complianceList;
 	
 	//get elements
@@ -90,6 +96,14 @@ public class ComplianceTabFactory {
 	
 	public WebElement getNewComplianceButton() {
 		return newComplianceButton;
+	}
+	
+	public WebElement getNewComplianceName() {
+		return newComplianceName;
+	}
+	
+	public WebElement getNewComplianceAddButton() {
+		return newComplianceAddButton;
 	}
 	
 	public WebElement getMaxInSpreadNumberTextBox() {

@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import co.indebted.mypackage.pagefactories.explore.ExplorePageFactory;
 import co.indebted.mypackage.pagefactories.settings.ComplianceTabFactory;
 import co.indebted.mypackage.utilities.LoginFactory;
+import co.indebted.mypackage.utilities.RandomStringGenerator;
 import co.indebted.mypackage.utilities.TestSetupAndTearDown;
 
 public class ComplianceTabTest extends TestSetupAndTearDown{
@@ -21,8 +22,10 @@ public class ComplianceTabTest extends TestSetupAndTearDown{
 		ExplorePageFactory explorePage = new ExplorePageFactory(driver);
 		explorePage.clickSettings();
 		
+		RandomStringGenerator randomStringGenerator = new RandomStringGenerator();
+		
 		ComplianceTabFactory complianceTab = new ComplianceTabFactory(driver);
-		Compliance newCompliance = new Compliance("Test Scheme10");
+		Compliance newCompliance = new Compliance(randomStringGenerator.randomString(5));
 		boolean complianceExist = false;
 		
 		//assertions
@@ -30,6 +33,8 @@ public class ComplianceTabTest extends TestSetupAndTearDown{
 		try {		
 			complianceTab.getComplianceTab().click();
 			complianceTab.getNewComplianceButton().click();
+			complianceTab.getNewComplianceName().sendKeys(newCompliance.complianceName);
+			complianceTab.getNewComplianceAddButton().click();
 			complianceTab.getMaxInSpreadNumberTextBox().clear();
 			complianceTab.getMaxInSpreadNumberTextBox().sendKeys("6");
 			complianceTab.getMaxInSpreadDaysTextBox().clear();
@@ -63,7 +68,7 @@ public class ComplianceTabTest extends TestSetupAndTearDown{
 			complianceTab.getDOWWednesdayBlock15().click();
 			complianceTab.getDOWWednesdayBlock39().click();
 			
-			Assert.assertEquals(complianceTab.getBlockersLabel().getText(), "Select times that you want to block for the particular days of the week.");
+			Assert.assertEquals(complianceTab.getBlockersLabel().getText(), "Select on the bar to block out particular times (24 hour format) for everyday.");
 			Thread.sleep(1000);
 		}
 		catch(AssertionError ex){

@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-12-13T04:03:55Z" name="Default suite" finished-at="2018-12-13T04:04:16Z" duration-ms="21059">
+  <suite started-at="2018-12-16T23:00:20Z" name="Default suite" finished-at="2018-12-16T23:00:36Z" duration-ms="15510">
     <groups>
     </groups>
-    <test started-at="2018-12-13T04:03:55Z" name="Default test" finished-at="2018-12-13T04:04:16Z" duration-ms="21059">
-      <class name="co.indebted.mypackage.tests.settings.AssistTabTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:co.indebted.mypackage.tests.settings.AssistTabTest@65b3f4a4]" started-at="2018-12-13T04:03:55Z" name="setUp" finished-at="2018-12-13T04:03:58Z" duration-ms="3100" status="PASS">
+    <test started-at="2018-12-16T23:00:20Z" name="Default test" finished-at="2018-12-16T23:00:36Z" duration-ms="15510">
+      <class name="co.indebted.mypackage.tests.settings.ComplianceTabTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:co.indebted.mypackage.tests.settings.ComplianceTabTest@65b3f4a4]" started-at="2018-12-16T23:00:20Z" name="setUp" finished-at="2018-12-16T23:00:23Z" duration-ms="3107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AssistTabTests()[pri:0, instance:co.indebted.mypackage.tests.settings.AssistTabTest@65b3f4a4]" started-at="2018-12-13T04:03:58Z" name="AssistTabTests" finished-at="2018-12-13T04:04:13Z" duration-ms="15403" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="ComplianceTabTests()[pri:0, instance:co.indebted.mypackage.tests.settings.ComplianceTabTest@65b3f4a4]" started-at="2018-12-16T23:00:23Z" name="ComplianceTabTests" finished-at="2018-12-16T23:00:33Z" duration-ms="9912" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[Element <button class="c0112" type="submit"> is not clickable at point (1344,387) because another element <div class="c0120"> obscures it
+              <![CDATA[Element <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLTYtN2gyNXYyNUgtNnoiLz48cGF0aCBkPSJNNi45MiA2Ljg1M2g0Ljk1MmEuNTU3LjU1NyAwIDEgMCAwLTEuMTE0SDYuOTIxVi43ODdhLjU1Ny41NTcgMCAxIDAtMS4xMTQgMFY1Ljc0SC44NTZhLjU1Ny41NTcgMCAxIDAgMCAxLjExM2g0Ljk1MXY0Ljk1MmEuNTU1LjU1NSAwIDAgMCAuNTU3LjU1N2MuMzA3IDAgLjU1Ny0uMjUuNTU3LS41NTdWNi44NTN6IiBmaWxsPSIjMTU1REZBIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L2c+PC9zdmc+"> could not be scrolled into view
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'Davids-MBP', ip: 'fe80:0:0:0:10a9:a5f1:b0c7:747e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.1', java.version: '10.0.1'
+System info: host: 'Davids-MBP', ip: 'fe80:0:0:0:14b3:af2b:ea3f:3bc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '10.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3459, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fa30e552-4043-bf40-8e26-9f0692d250a5]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 33485, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c214db7f-18c2-b542-92e4-3a93a4e4bfbb]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="c0112" type="submit"> is not clickable at point (1344,387) because another element <div class="c0120"> obscures it
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLTYtN2gyNXYyNUgtNnoiLz48cGF0aCBkPSJNNi45MiA2Ljg1M2g0Ljk1MmEuNTU3LjU1NyAwIDEgMCAwLTEuMTE0SDYuOTIxVi43ODdhLjU1Ny41NTcgMCAxIDAtMS4xMTQgMFY1Ljc0SC44NTZhLjU1Ny41NTcgMCAxIDAgMCAxLjExM2g0Ljk1MXY0Ljk1MmEuNTU1LjU1NSAwIDAgMCAuNTU3LjU1N2MuMzA3IDAgLjU1Ny0uMjUuNTU3LS41NTdWNi44NTN6IiBmaWxsPSIjMTU1REZBIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L2c+PC9zdmc+"> could not be scrolled into view
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'Davids-MBP', ip: 'fe80:0:0:0:10a9:a5f1:b0c7:747e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.1', java.version: '10.0.1'
+System info: host: 'Davids-MBP', ip: 'fe80:0:0:0:14b3:af2b:ea3f:3bc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '10.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3459, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fa30e552-4043-bf40-8e26-9f0692d250a5
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 33485, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c214db7f-18c2-b542-92e4-3a93a4e4bfbb
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -46,7 +46,7 @@ at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegating
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
-at co.indebted.mypackage.tests.settings.AssistTabTest.AssistTabTests(AssistTabTest.java:56)
+at co.indebted.mypackage.tests.settings.ComplianceTabTest.ComplianceTabTests(ComplianceTabTest.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,15 +74,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AssistTabTests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:co.indebted.mypackage.tests.settings.AssistTabTest@65b3f4a4]" started-at="2018-12-13T04:04:13Z" name="tearDown" finished-at="2018-12-13T04:04:16Z" duration-ms="2536" status="PASS">
+        </test-method> <!-- ComplianceTabTests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:co.indebted.mypackage.tests.settings.ComplianceTabTest@65b3f4a4]" started-at="2018-12-16T23:00:33Z" name="tearDown" finished-at="2018-12-16T23:00:36Z" duration-ms="2466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- co.indebted.mypackage.tests.settings.AssistTabTest -->
+      </class> <!-- co.indebted.mypackage.tests.settings.ComplianceTabTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
