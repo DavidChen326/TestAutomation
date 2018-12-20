@@ -2,32 +2,36 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-12-16T23:00:20Z" name="Default suite" finished-at="2018-12-16T23:00:36Z" duration-ms="15510">
+  <suite started-at="2018-12-20T01:56:20Z" name="Default suite" finished-at="2018-12-20T01:56:36Z" duration-ms="16164">
     <groups>
     </groups>
-    <test started-at="2018-12-16T23:00:20Z" name="Default test" finished-at="2018-12-16T23:00:36Z" duration-ms="15510">
-      <class name="co.indebted.mypackage.tests.settings.ComplianceTabTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:co.indebted.mypackage.tests.settings.ComplianceTabTest@65b3f4a4]" started-at="2018-12-16T23:00:20Z" name="setUp" finished-at="2018-12-16T23:00:23Z" duration-ms="3107" status="PASS">
+    <test started-at="2018-12-20T01:56:20Z" name="Default test" finished-at="2018-12-20T01:56:36Z" duration-ms="16164">
+      <class name="co.indebted.mypackage.tests.portals.AgentPortalTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:co.indebted.mypackage.tests.portals.AgentPortalTest@60015ef5]" started-at="2018-12-20T01:56:20Z" name="setUp" finished-at="2018-12-20T01:56:23Z" duration-ms="2818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ComplianceTabTests()[pri:0, instance:co.indebted.mypackage.tests.settings.ComplianceTabTest@65b3f4a4]" started-at="2018-12-16T23:00:23Z" name="ComplianceTabTests" finished-at="2018-12-16T23:00:33Z" duration-ms="9912" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="agentPortalTest()[pri:0, instance:co.indebted.mypackage.tests.portals.AgentPortalTest@60015ef5]" started-at="2018-12-20T01:56:23Z" name="agentPortalTest" finished-at="2018-12-20T01:56:34Z" duration-ms="10887" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Element <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLTYtN2gyNXYyNUgtNnoiLz48cGF0aCBkPSJNNi45MiA2Ljg1M2g0Ljk1MmEuNTU3LjU1NyAwIDEgMCAwLTEuMTE0SDYuOTIxVi43ODdhLjU1Ny41NTcgMCAxIDAtMS4xMTQgMFY1Ljc0SC44NTZhLjU1Ny41NTcgMCAxIDAgMCAxLjExM2g0Ljk1MXY0Ljk1MmEuNTU1LjU1NSAwIDAgMCAuNTU3LjU1N2MuMzA3IDAgLjU1Ny0uMjUuNTU3LS41NTdWNi44NTN6IiBmaWxsPSIjMTU1REZBIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L2c+PC9zdmc+"> could not be scrolled into view
+              <![CDATA[Unable to locate element: #PaymentMenu
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'Davids-MBP', ip: 'fe80:0:0:0:14b3:af2b:ea3f:3bc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '10.0.1'
+System info: host: 'Davids-MBP', ip: 'fe80:0:0:0:1c81:3409:6e8a:f7ef%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '10.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 33485, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c214db7f-18c2-b542-92e4-3a93a4e4bfbb]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 30296, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2e60ca01-dcdc-a24a-aa54-b05688a28ccf
+*** Element info: {Using=id, value=PaymentMenu}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLTYtN2gyNXYyNUgtNnoiLz48cGF0aCBkPSJNNi45MiA2Ljg1M2g0Ljk1MmEuNTU3LjU1NyAwIDEgMCAwLTEuMTE0SDYuOTIxVi43ODdhLjU1Ny41NTcgMCAxIDAtMS4xMTQgMFY1Ljc0SC44NTZhLjU1Ny41NTcgMCAxIDAgMCAxLjExM2g0Ljk1MXY0Ljk1MmEuNTU1LjU1NSAwIDAgMCAuNTU3LjU1N2MuMzA3IDAgLjU1Ny0uMjUuNTU3LS41NTdWNi44NTN6IiBmaWxsPSIjMTU1REZBIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L2c+PC9zdmc+"> could not be scrolled into view
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #PaymentMenu
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'Davids-MBP', ip: 'fe80:0:0:0:14b3:af2b:ea3f:3bc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '10.0.1'
+System info: host: 'Davids-MBP', ip: 'fe80:0:0:0:1c81:3409:6e8a:f7ef%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '10.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 33485, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c214db7f-18c2-b542-92e4-3a93a4e4bfbb
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 30296, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2e60ca01-dcdc-a24a-aa54-b05688a28ccf
+*** Element info: {Using=id, value=PaymentMenu}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -38,15 +42,14 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
-at co.indebted.mypackage.tests.settings.ComplianceTabTest.ComplianceTabTests(ComplianceTabTest.java:35)
+at co.indebted.mypackage.tests.portals.AgentPortalTest.agentPortalTest(AgentPortalTest.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,15 +77,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ComplianceTabTests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:co.indebted.mypackage.tests.settings.ComplianceTabTest@65b3f4a4]" started-at="2018-12-16T23:00:33Z" name="tearDown" finished-at="2018-12-16T23:00:36Z" duration-ms="2466" status="PASS">
+        </test-method> <!-- agentPortalTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:co.indebted.mypackage.tests.portals.AgentPortalTest@60015ef5]" started-at="2018-12-20T01:56:34Z" name="tearDown" finished-at="2018-12-20T01:56:36Z" duration-ms="2441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- co.indebted.mypackage.tests.settings.ComplianceTabTest -->
+      </class> <!-- co.indebted.mypackage.tests.portals.AgentPortalTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

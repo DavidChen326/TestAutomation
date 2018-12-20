@@ -16,7 +16,7 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 		
 		driver.get("https://app.indebted-staging.co/debts/2447");
 		DebtPageFactory debtPage = new DebtPageFactory(driver);
-		
+
 		//assertions
 		//test 1 credit card payment
 		try {
@@ -26,8 +26,10 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 			Thread.sleep(500);
 			debtPage.getAgentPortalEmail().clear();
 			debtPage.getAgentPortalEmail().sendKeys("indebted.tester1@gmail.com");
+			debtPage.getAgentPortalDeclarationCheckbox().click();
 			Thread.sleep(500);
 			debtPage.getAgentPortalNextStepButton().click();
+			debtPage.getAgentPortalCreditCardTab().click();
 			debtPage.getAgentPortalCreditCardNumber().sendKeys("4111111111111111");
 			debtPage.getAgentPortalFirstName().sendKeys("Foo");
 			debtPage.getAgentPortalExpiryDate().sendKeys("12/2020");
@@ -36,7 +38,7 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 			debtPage.getAgentPortalAmount().clear();
 			debtPage.getAgentPortalAmount().sendKeys("6");
 			Thread.sleep(1000);
-			debtPage.getAgentPortalReviewDetailsButton1().click();
+			debtPage.getAgentPortalNextButton().click();
 			Thread.sleep(2000);
 			debtPage.getAgentPortalConfirmButton().click();
 			Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
@@ -55,6 +57,7 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 					Thread.sleep(500);
 					debtPage.getAgentPortalEmail().clear();
 					debtPage.getAgentPortalEmail().sendKeys("indebted.tester1@gmail.com");
+					debtPage.getAgentPortalDeclarationCheckbox().click();
 					Thread.sleep(500);
 					debtPage.getAgentPortalNextStepButton().click();
 					debtPage.getAgentPortalDirectDebitTab().click();
@@ -78,7 +81,7 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 					debtPage.getAgentPortalAmount().clear();
 					debtPage.getAgentPortalAmount().sendKeys("6");
 					Thread.sleep(1000);
-					debtPage.getAgentPortalReviewDetailsButton1().click();
+					debtPage.getAgentPortalNextButton().click();
 					Thread.sleep(2000);
 					debtPage.getAgentPortalConfirmButton().click();
 					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
@@ -97,14 +100,14 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 					Thread.sleep(500);
 					debtPage.getAgentPortalEmail().clear();
 					debtPage.getAgentPortalEmail().sendKeys("indebted.tester1@gmail.com");
+					debtPage.getAgentPortalDeclarationCheckbox().click();
 					Thread.sleep(500);
 					debtPage.getAgentPortalNextStepButton().click();
-					debtPage.getAgentPortalExistingTab().click();
 					debtPage.getAgentPortalExistingCreditCard().click();
 					debtPage.getAgentPortalAmount().clear();
 					debtPage.getAgentPortalAmount().sendKeys("6");
 					Thread.sleep(1000);
-					debtPage.getAgentPortalReviewDetailsButton2().click();
+					debtPage.getAgentPortalNextButton().click();
 					Thread.sleep(2000);
 					debtPage.getAgentPortalConfirmButton().click();
 					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
@@ -123,14 +126,14 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 					Thread.sleep(500);
 					debtPage.getAgentPortalEmail().clear();
 					debtPage.getAgentPortalEmail().sendKeys("indebted.tester1@gmail.com");
+					debtPage.getAgentPortalDeclarationCheckbox().click();
 					Thread.sleep(500);
 					debtPage.getAgentPortalNextStepButton().click();
-					debtPage.getAgentPortalExistingTab().click();
 					debtPage.getAgentPortalExistingBank().click();
 					debtPage.getAgentPortalAmount().clear();
 					debtPage.getAgentPortalAmount().sendKeys("6");
 					Thread.sleep(1000);
-					debtPage.getAgentPortalReviewDetailsButton2().click();
+					debtPage.getAgentPortalNextButton().click();
 					Thread.sleep(2000);
 					debtPage.getAgentPortalConfirmButton().click();
 					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
@@ -139,8 +142,8 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 					System.out.println("Error: Existing Bank payment was unsuccessful");
 				    throw ex;
 				}
-	
-				//test 5 wire transfer payment
+				
+				//test 5 BPay payment
 				try {
 					driver.navigate().refresh();
 					debtPage.getPaymentButton().click();
@@ -149,47 +152,50 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 					Thread.sleep(500);
 					debtPage.getAgentPortalEmail().clear();
 					debtPage.getAgentPortalEmail().sendKeys("indebted.tester1@gmail.com");
-					Thread.sleep(500);
-					debtPage.getAgentPortalNextStepButton().click();
-					debtPage.getAgentPortalWireTransferTab().click();
-					debtPage.getAgentPortalAmount().clear();
-					debtPage.getAgentPortalAmount().sendKeys("6");
-					Thread.sleep(1000);
-					debtPage.getAgentPortalReviewDetailsButton1().click();
-					Thread.sleep(2000);
-					debtPage.waitForReferenceCodeGenerated1();
-					debtPage.getAgentPortalConfirmButton().click();
-					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Your Debtor has now Promise to Pay");
-				}
-				catch(AssertionError ex){
-					System.out.println("Error: Wire Transfer payment was unsuccessful");
-				    throw ex;
-				}
-
-				//test 6 BPay payment
-				try {
-					driver.navigate().refresh();
-					debtPage.getPaymentButton().click();
-					Thread.sleep(500);
-					debtPage.getAgentPortalButton().click();
-					Thread.sleep(500);
-					debtPage.getAgentPortalEmail().clear();
-					debtPage.getAgentPortalEmail().sendKeys("indebted.tester1@gmail.com");
+					debtPage.getAgentPortalDeclarationCheckbox().click();
 					Thread.sleep(500);
 					debtPage.getAgentPortalNextStepButton().click();
 					debtPage.getAgentPortalBPayTab().click();
 					debtPage.getAgentPortalAmount().clear();
 					debtPage.getAgentPortalAmount().sendKeys("6");
 					Thread.sleep(1000);
-					debtPage.getAgentPortalReviewDetailsButton1().click();
+					debtPage.getAgentPortalNextButton().click();
 					Thread.sleep(2000);
 					debtPage.waitForReferenceCodeGenerated2();
 					debtPage.getAgentPortalConfirmButton().click();
-					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Your Debtor has now Promise to Pay");
+					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Your debtor has now Promise to Pay");
 				}
 				catch(AssertionError ex){
 					System.out.println("Error: BPay payment was unsuccessful");
 				    throw ex;
 				}
+				
+				//test 6 PayID payment
+				try {
+					driver.navigate().refresh();
+					debtPage.getPaymentButton().click();
+					Thread.sleep(500);
+					debtPage.getAgentPortalButton().click();
+					Thread.sleep(500);
+					debtPage.getAgentPortalEmail().clear();
+					debtPage.getAgentPortalEmail().sendKeys("indebted.tester1@gmail.com");
+					debtPage.getAgentPortalDeclarationCheckbox().click();
+					Thread.sleep(500);
+					debtPage.getAgentPortalNextStepButton().click();
+					debtPage.getAgentPortalWireTransferTab().click();
+					debtPage.getAgentPortalAmount().clear();
+					debtPage.getAgentPortalAmount().sendKeys("6");
+					Thread.sleep(1000);
+					debtPage.getAgentPortalNextButton().click();
+					Thread.sleep(2000);
+					debtPage.waitForReferenceCodeGenerated1();
+					debtPage.getAgentPortalConfirmButton().click();
+					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Your debtor has now Promise to Pay");
+				}
+				catch(AssertionError ex){
+					System.out.println("Error: PayID payment was unsuccessful");
+				    throw ex;
+				}
+
 	}
 }
