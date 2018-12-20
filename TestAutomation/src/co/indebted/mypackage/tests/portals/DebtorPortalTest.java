@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import co.indebted.mypackage.pagefactories.debtor.DebtorPortalPageFactory;
 import co.indebted.mypackage.pagefactories.debts.DebtPageFactory;
+import co.indebted.mypackage.utilities.LogOutFactory;
 import co.indebted.mypackage.utilities.LoginFactory;
 import co.indebted.mypackage.utilities.TestSetupAndTearDown;
 
@@ -20,6 +21,8 @@ public class DebtorPortalTest extends TestSetupAndTearDown{
 		DebtPageFactory debtPage = new DebtPageFactory(driver);
 		DebtorPortalPageFactory debtorPortalPage = new DebtorPortalPageFactory(driver);
 		String debtorProtalLink;
+		
+		LogOutFactory logOutFactory = new LogOutFactory(driver);
 		
 		//assertions
 		//test 1 open debt portal
@@ -38,20 +41,25 @@ public class DebtorPortalTest extends TestSetupAndTearDown{
 			debtPage.getSendEmailButton().click();
 			Thread.sleep(500);
 			
+			//logout current user
+			logOutFactory.logOut();
+			
 			//open debtor portal via link sent to debtor by email
 			driver.get(debtorProtalLink);
-			Assert.assertEquals(debtorPortalPage.getGreetingsHeader().getText().contains("Vedvrat Lavada Sharma"), true);
+			Assert.assertEquals(debtorPortalPage.getGreetingsHeader().getText().contains("let's clear your debt in 4 simple steps"), true);
 			Thread.sleep(1000);
 		}
 		catch(AssertionError ex){
-			System.out.println("Error: Debtor name is incorrect");
+			System.out.println("Error: Debtor protal not opened");
 		    throw ex;
 		}
 		
 		//test 2 credit card payment
 		try {
 			debtorPortalPage.getStartButton().click();
-			debtorPortalPage.getNextStepButton().click();
+			debtorPortalPage.getDeclarationCheckbox().click();
+			Thread.sleep(1000);
+			debtorPortalPage.getNextButton().click();
 			debtorPortalPage.getCreditCardNumber().sendKeys("4111111111111111");
 			debtorPortalPage.getFirstName().sendKeys("Foo");
 			debtorPortalPage.getExpiryDate().sendKeys("12/2020");
@@ -60,7 +68,7 @@ public class DebtorPortalTest extends TestSetupAndTearDown{
 			debtorPortalPage.getAmount().clear();
 			debtorPortalPage.getAmount().sendKeys("6");
 			Thread.sleep(1000);
-			debtorPortalPage.getReviewDetailsButton1().click();
+			debtorPortalPage.getStep2NextButton().click();
 			Thread.sleep(2000);
 			debtorPortalPage.getConfirmButton().click();
 			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
@@ -76,7 +84,9 @@ public class DebtorPortalTest extends TestSetupAndTearDown{
 		try {
 			driver.navigate().refresh();
 			debtorPortalPage.getStartButton().click();
-			debtorPortalPage.getNextStepButton().click();
+			debtorPortalPage.getDeclarationCheckbox().click();
+			Thread.sleep(1000);
+			debtorPortalPage.getNextButton().click();
 			debtorPortalPage.getDirectDebitTab().click();
 			debtorPortalPage.getBankName().sendKeys("Westpac");
 			debtorPortalPage.getAccountName().sendKeys("Foo Bar");
@@ -98,7 +108,7 @@ public class DebtorPortalTest extends TestSetupAndTearDown{
 			debtorPortalPage.getAmount().clear();
 			debtorPortalPage.getAmount().sendKeys("6");
 			Thread.sleep(1000);
-			debtorPortalPage.getReviewDetailsButton1().click();
+			debtorPortalPage.getStep2NextButton().click();
 			Thread.sleep(2000);
 			debtorPortalPage.getConfirmButton().click();
 			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
@@ -108,80 +118,19 @@ public class DebtorPortalTest extends TestSetupAndTearDown{
 			System.out.println("Error: Bank payment was unsuccessful");
 		    throw ex;
 		}
-		
-		//test 4 existing credit card payment
-		try {
-			driver.navigate().refresh();
-			debtorPortalPage.getStartButton().click();
-			debtorPortalPage.getNextStepButton().click();
-			debtorPortalPage.getExistingTab().click();
-			debtorPortalPage.getExistingCreditCard().click();
-			debtorPortalPage.getAmount().clear();
-			debtorPortalPage.getAmount().sendKeys("6");
-			Thread.sleep(1000);
-			debtorPortalPage.getReviewDetailsButton2().click();
-			Thread.sleep(2000);
-			debtorPortalPage.getConfirmButton().click();
-			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
-			Thread.sleep(1000);
-		}
-		catch(AssertionError ex){
-			System.out.println("Error: Existing Credit Card payment was unsuccessful");
-		    throw ex;
-		}
-		
-		//test 5 existing bank payment
-		try {
-			driver.navigate().refresh();
-			debtorPortalPage.getStartButton().click();
-			debtorPortalPage.getNextStepButton().click();
-			debtorPortalPage.getExistingTab().click();
-			debtorPortalPage.getExistingBank().click();
-			debtorPortalPage.getAmount().clear();
-			debtorPortalPage.getAmount().sendKeys("6");
-			Thread.sleep(1000);
-			debtorPortalPage.getReviewDetailsButton2().click();
-			Thread.sleep(2000);
-			debtorPortalPage.getConfirmButton().click();
-			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
-			Thread.sleep(1000);
-		}
-		catch(AssertionError ex){
-			System.out.println("Error: Existing Bank payment was unsuccessful");
-		    throw ex;
-		}
 
-		//test 6 wire transfer payment
+		//test 4 BPay payment
 		try {
 			driver.navigate().refresh();
 			debtorPortalPage.getStartButton().click();
-			debtorPortalPage.getNextStepButton().click();
-			debtorPortalPage.getWireTransferTab().click();
-			debtorPortalPage.getAmount().clear();
-			debtorPortalPage.getAmount().sendKeys("6");
+			debtorPortalPage.getDeclarationCheckbox().click();
 			Thread.sleep(1000);
-			debtorPortalPage.getReviewDetailsButton1().click();
-			Thread.sleep(2000);
-			debtorPortalPage.waitForReferenceCodeGenerated1();
-			debtorPortalPage.getConfirmButton().click();
-			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Your debts is now Promise to Pay.");
-			Thread.sleep(1000);
-		}
-		catch(AssertionError ex){
-			System.out.println("Error: Wire Transfer payment was unsuccessful");
-		    throw ex;
-		}
-
-		//test 7 BPay payment
-		try {
-			driver.navigate().refresh();
-			debtorPortalPage.getStartButton().click();
-			debtorPortalPage.getNextStepButton().click();
+			debtorPortalPage.getNextButton().click();
 			debtorPortalPage.getBPayTab().click();
 			debtorPortalPage.getAmount().clear();
 			debtorPortalPage.getAmount().sendKeys("6");
 			Thread.sleep(1000);
-			debtorPortalPage.getReviewDetailsButton1().click();
+			debtorPortalPage.getStep2NextButton().click();
 			Thread.sleep(2000);
 			debtorPortalPage.waitForReferenceCodeGenerated2();
 			debtorPortalPage.getConfirmButton().click();
@@ -190,7 +139,31 @@ public class DebtorPortalTest extends TestSetupAndTearDown{
 		}
 		catch(AssertionError ex){
 			System.out.println("Error: BPay payment was unsuccessful");
+			throw ex;
+		}
+				
+		//test 5 PayID payment
+		try {
+			driver.navigate().refresh();
+			debtorPortalPage.getStartButton().click();
+			debtorPortalPage.getDeclarationCheckbox().click();
+			Thread.sleep(1000);
+			debtorPortalPage.getNextButton().click();
+			debtorPortalPage.getWireTransferTab().click();
+			debtorPortalPage.getAmount().clear();
+			debtorPortalPage.getAmount().sendKeys("6");
+			Thread.sleep(1000);
+			debtorPortalPage.getStep2NextButton().click();
+			Thread.sleep(2000);
+			debtorPortalPage.waitForReferenceCodeGenerated1();
+			debtorPortalPage.getConfirmButton().click();
+			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Your debts is now Promise to Pay.");
+			Thread.sleep(1000);
+		}
+		catch(AssertionError ex){
+			System.out.println("Error: PayID payment was unsuccessful");
 		    throw ex;
 		}
+
 	}
 }
