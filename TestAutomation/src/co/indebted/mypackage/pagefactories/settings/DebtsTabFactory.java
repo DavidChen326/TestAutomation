@@ -13,7 +13,7 @@ public class DebtsTabFactory {
 
 	WebDriver driver;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[7]/a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[7]/a")
 	WebElement debtsTab;
 	
 	@FindBy(name = "field")

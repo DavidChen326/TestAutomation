@@ -11,7 +11,7 @@ public class GeneralTabFactory {
 
 	WebDriver driver;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[1]/a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[1]/a")
 	WebElement generalTab;
 	
 	@FindBy(name = "legal_name")

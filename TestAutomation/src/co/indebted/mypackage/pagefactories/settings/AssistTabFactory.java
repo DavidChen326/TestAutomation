@@ -13,7 +13,7 @@ public class AssistTabFactory {
 
 	WebDriver driver;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[6]/a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[6]/a")
 	WebElement assistTab;
 	
 	@FindBy(name = "field")

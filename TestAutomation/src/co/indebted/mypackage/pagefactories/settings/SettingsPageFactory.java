@@ -9,34 +9,37 @@ public class SettingsPageFactory {
 
 	WebDriver driver;
 	
-	@FindBy(css = "#app > div > div.c012 > li:nth-child(1) > a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[1]/a")
 	WebElement generalTab;
 	
-	@FindBy(css = "#app > div > div.c012 > li:nth-child(2) > a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[2]/a")
 	WebElement complianceTab;
 	
-	@FindBy(css = "#app > div > div.c012 > li:nth-child(3) > a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[3]/a")
 	WebElement rolesTab;
 	
-	@FindBy(css = "#app > div > div.c012 > li:nth-child(4) > a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[4]/a")
 	WebElement teamsTab;
 	
-	@FindBy(css = "#app > div > div.c012 > li:nth-child(5) > a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[5]/a")
 	WebElement usersTab;
 	
-	@FindBy(css = "#app > div > div.c012 > li:nth-child(6) > a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[6]/a")
 	WebElement assistTab;
 	
-	@FindBy(css = "#app > div > div.c012 > li:nth-child(7) > a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[7]/a")
 	WebElement debtsTab;
 	
-	@FindBy(css = "#app > div > div.c012 > li:nth-child(8) > a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[8]/a")
+	WebElement financeTab;
+	
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[9]/a")
 	WebElement inboxTab;
 	
-	@FindBy(css = "#app > div > div.c012 > li:nth-child(9) > a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[10]/a")
 	WebElement buildTab;
 	
-	@FindBy(css = "#app > div > div.c012 > li:nth-child(10) > a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[11]/a")
 	WebElement contactsTab;
 
 	//steps

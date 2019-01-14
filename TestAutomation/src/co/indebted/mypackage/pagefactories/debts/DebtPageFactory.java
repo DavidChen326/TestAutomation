@@ -23,6 +23,10 @@ public class DebtPageFactory {
 		@FindBy(css = "#promise_76693ee8-69d7-44c4-97e6-00a7ab987550 > div.col-md-2 > a > i")
 		WebElement applyHardshipButton;
 	
+	//Payment plan
+		@FindBy(xpath = "//*[@id=\"payment_plan_card\"]/div/span/small/a")
+		WebElement applyPaymentPlanButton;
+		
 	//agent portal
 		@FindBy(xpath = "/html/body/div[3]/div/div[1]/div[5]/div[9]/div[2]/div/div/a[2]")
 		WebElement agentPortalButton;
@@ -190,6 +194,11 @@ public class DebtPageFactory {
 		//hardship
 		public WebElement getApplyHardshipButton() {
 			return applyHardshipButton;
+		}
+		
+		//payment plan
+		public WebElement getApplyPaymentPlanButton() {
+			return applyPaymentPlanButton;
 		}
 		
 		//adjustments

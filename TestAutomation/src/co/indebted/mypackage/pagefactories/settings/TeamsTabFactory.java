@@ -9,7 +9,7 @@ public class TeamsTabFactory {
 
 	WebDriver driver;
 	
-	@FindBy(css = "#app > div > div.c012 > li:nth-child(4) > a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[4]/a")
 	WebElement teamsTab;
 	
 	@FindBy(css = "#app > div > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div > button")

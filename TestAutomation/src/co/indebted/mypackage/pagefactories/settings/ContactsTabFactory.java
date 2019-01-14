@@ -9,7 +9,7 @@ public class ContactsTabFactory {
 
 	WebDriver driver;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[10]/a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[11]/a")
 	WebElement contactsTab;
 	
 	

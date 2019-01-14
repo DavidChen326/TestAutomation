@@ -13,7 +13,7 @@ public class UsersTabFactory {
 
 	WebDriver driver;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[5]/a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[5]/a")
 	WebElement usersTab;
 	
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[1]/div[2]/div/button")

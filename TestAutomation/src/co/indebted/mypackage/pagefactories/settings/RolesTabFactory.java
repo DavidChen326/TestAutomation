@@ -13,7 +13,7 @@ public class RolesTabFactory {
 
 	WebDriver driver;
 	
-	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/li[3]/a")
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[3]/a")
 	WebElement permissionsTab;
 	
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div/img")
