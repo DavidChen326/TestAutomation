@@ -34,12 +34,15 @@ public class SettingsPageFactory {
 	WebElement financeTab;
 	
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[9]/a")
-	WebElement inboxTab;
+	WebElement disputesTab;
 	
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[10]/a")
-	WebElement buildTab;
+	WebElement inboxTab;
 	
 	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[11]/a")
+	WebElement buildTab;
+	
+	@FindBy(xpath = "//*[@id=\"app\"]/div/div[2]/div[2]/li[12]/a")
 	WebElement contactsTab;
 
 	//steps
@@ -73,6 +76,14 @@ public class SettingsPageFactory {
 	
 	public WebElement getDebtsTab() {
 		return debtsTab;
+	}
+	
+	public WebElement getFinanceTab() {
+		return financeTab;
+	}
+	
+	public WebElement getDisputeTab() {
+		return disputesTab;
 	}
 	
 	public WebElement getInboxTab() {

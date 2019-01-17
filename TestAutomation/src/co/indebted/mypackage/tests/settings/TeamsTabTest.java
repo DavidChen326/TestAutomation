@@ -55,7 +55,7 @@ public class TeamsTabTest extends TestSetupAndTearDown{
 			Thread.sleep(1000);
 		}
 		catch(AssertionError ex){
-		System.out.println("Error:");
+		System.out.println("Error: Update new team failed");
 		throw ex;
 		}		
 	}
