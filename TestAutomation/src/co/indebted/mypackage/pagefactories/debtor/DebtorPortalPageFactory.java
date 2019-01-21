@@ -16,43 +16,43 @@ public class DebtorPortalPageFactory {
 	WebDriver driver;
 	
 	//step 1
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div.c018 > div:nth-child(1) > div.c017 > div")
+		@FindBy(css = "#assemblyForm > div > div > div.c015 > div.c019 > div:nth-child(1) > div.c018 > div")
 		WebElement greetingsHeader;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div.c018 > div.c0111 > div.c0113 > button")
+		@FindBy(css = "#assemblyForm > div > div > div.c015 > div.c019 > div.c0112 > div.c0114 > button")
 		WebElement startButton;
 		
 		@FindBy(id = "declaration")
 		WebElement declarationCheckbox;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > form > div > div:nth-child(2) > div.c0113 > button")
+		@FindBy(css = "#assemblyForm > div > div > div.c015 > div > div:nth-child(2) > div > form > div:nth-child(2) > div:nth-child(2) > div.c0114 > button")
 		WebElement nextButton;
 	
 	//step 2 payment methods	
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div.c0133 > div.c0136 > li:nth-child(2) > img")
+		@FindBy(css = "#assemblyForm > div > div > div.c015 > div > div:nth-child(2) > div > div:nth-child(2) > div.c0134 > div.c0137 > li:nth-child(2) > img")
 		WebElement directDebitTab;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div.c0133 > div.c0136 > li:nth-child(3) > img")
+		@FindBy(css = "#assemblyForm > div > div > div.c015 > div > div:nth-child(2) > div > div:nth-child(2) > div.c0134 > div.c0137 > li:nth-child(3) > img")
 		WebElement BPayTab;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div.c0133 > div.c0136 > li:nth-child(4) > img")
+		@FindBy(css = "#assemblyForm > div > div > div.c015 > div > div:nth-child(2) > div > div:nth-child(2) > div.c0134 > div.c0137 > li:nth-child(4) > img")
 		WebElement payIDTab;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div:nth-child(2) > form > div > div:nth-child(2) > div.c0113 > button")
+		@FindBy(css = "#assemblyForm > div > div > div.c015 > div > div:nth-child(2) > div > div:nth-child(2) > div.c0114 > button")
 		WebElement step2NextButton;
 		
 	//step 3
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div:nth-child(2) > div.c0113 > button")
+		@FindBy(css = "#assemblyForm > div > div > div.c015 > div > div:nth-child(2) > div > div:nth-child(2) > div.c0114 > button")
 		WebElement confirmButton;
 				
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(1) > div > div.c0138")
+		@FindBy(css = "#assemblyForm > div > div > div.c015 > div > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(1) > div > div.c0145")
 		WebElement payIDcode;
 				
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(1) > div > div.c0138")
+		@FindBy(css = "#assemblyForm > div > div > div.c015 > div > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(1) > div > div.c0145")
 		WebElement billerCode;
 				
 	//agent portal step 4
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div > div > div.headerMessage")
+		@FindBy(css = "#assemblyForm > div > div > div.c015 > div > div > div > div.headerMessage")
 		WebElement successfulHeader;
 	
 	//credit card details

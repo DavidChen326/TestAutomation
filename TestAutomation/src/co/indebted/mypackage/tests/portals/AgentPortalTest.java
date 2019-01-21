@@ -41,7 +41,7 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 			debtPage.getAgentPortalNextButton().click();
 			Thread.sleep(2000);
 			debtPage.getAgentPortalConfirmButton().click();
-			Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
+			Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Thank you, Your payment was processed successfully.");
 		}
 		catch(AssertionError ex){
 			System.out.println("Error: Credit Card payment was unsuccessful");
@@ -84,7 +84,7 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 					debtPage.getAgentPortalNextButton().click();
 					Thread.sleep(2000);
 					debtPage.getAgentPortalConfirmButton().click();
-					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
+					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Thank you, Your payment was processed successfully.");
 				}
 				catch(AssertionError ex){
 					System.out.println("Error: Bank payment was unsuccessful");
@@ -110,7 +110,7 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 					debtPage.getAgentPortalNextButton().click();
 					Thread.sleep(2000);
 					debtPage.getAgentPortalConfirmButton().click();
-					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
+					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Thank you, Your payment was processed successfully.");
 				}
 				catch(AssertionError ex){
 					System.out.println("Error: Existing Credit Card payment was unsuccessful");
@@ -136,7 +136,7 @@ public class AgentPortalTest extends TestSetupAndTearDown{
 					debtPage.getAgentPortalNextButton().click();
 					Thread.sleep(2000);
 					debtPage.getAgentPortalConfirmButton().click();
-					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
+					Assert.assertEquals(debtPage.getAgentPortalSuccessfulHeader().getText(), "Thank you, Your payment was processed successfully.");
 				}
 				catch(AssertionError ex){
 					System.out.println("Error: Existing Bank payment was unsuccessful");

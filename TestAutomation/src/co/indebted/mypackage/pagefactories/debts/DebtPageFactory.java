@@ -38,44 +38,44 @@ public class DebtPageFactory {
 		@FindBy(id = "declaration")
 		WebElement agentPortalDeclarationCheckbox;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > form > div > div:nth-child(2) > div.c0125 > button")
+		@FindBy(css = "#assemblyForm > div > div > div > div > div:nth-child(2) > div > form > div:nth-child(2) > div:nth-child(2) > div.c0124 > button")
 		WebElement agentPortalNextStepButton;
 		
 		//agent portal steps 2 payment methods
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div.c0128 > div.c0131 > li:nth-child(2) > img")
+		@FindBy(css = "#assemblyForm > div > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div.c0127 > div.c0130 > li:nth-child(2) > img")
 		WebElement agentPortalCreditCardTab;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div.c0128 > div.c0131 > li:nth-child(3) > img")
+		@FindBy(css = "#assemblyForm > div > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div.c0127 > div.c0130 > li:nth-child(3) > img")
 		WebElement agentPortalDirectDebitTab;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div.c0128 > div.c0131 > li:nth-child(4) > img")
+		@FindBy(css = "#assemblyForm > div > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div.c0127 > div.c0130 > li:nth-child(4) > img")
 		WebElement agentPortalBPayTab;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div.c0128 > div.c0131 > li:nth-child(5) > img")
+		@FindBy(css = "#assemblyForm > div > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div.c0127 > div.c0130 > li:nth-child(5) > img")
 		WebElement agentPortalPayIDTab;
 		
 	//agent portal steps 2 payment method --> existing methods
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div:nth-child(2) > form > div > div:nth-child(1) > div > div.c0128 > div.c0131 > li:nth-child(1) > img")
+		@FindBy(css = "#assemblyForm > div > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > form > div > div:nth-child(1) > div > div.c0127 > div.c0130 > li:nth-child(1) > img")
 		WebElement agentPortalExistingCreditCard;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div:nth-child(2) > form > div > div:nth-child(1) > div > div.c0128 > div.c0131 > li:nth-child(2) > img")
+		@FindBy(css = "#assemblyForm > div > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > form > div > div:nth-child(1) > div > div.c0127 > div.c0130 > li:nth-child(2) > img")
 		WebElement agentPortalExistingBank;
 		
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div:nth-child(2) > form > div > div:nth-child(2) > div.c0125 > button")
+		@FindBy(css = "#assemblyForm > div > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > form > div > div:nth-child(2) > div.c0124 > button")
 		WebElement agentPortalReviewNextButton;
 		
 	//agent portal step 3						
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(1) > div > div.c0133")
+		@FindBy(css = "#assemblyForm > div > div > div > div > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(1) > div > div.c0132")
 		WebElement agentPortalReviewDetailsPayID;
 				
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(1) > div > div.c0133")
+		@FindBy(css = "#assemblyForm > div > div > div > div > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(1) > div > div.c0132")
 		WebElement agentPortalReviewDetailsBillerCode;
 				
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div:nth-child(2) > div > div:nth-child(2) > div.c0125 > button")
+		@FindBy(css = "#assemblyForm > div > div > div > div > div:nth-child(2) > div > div:nth-child(2) > div.c0124 > button")
 		WebElement agentPortalConfirmButton;
 				
 	//agent portal step 4
-		@FindBy(css = "#assemblyForm > div > div > div.c014 > div > div > div > div.headerMessage")
+		@FindBy(css = "#assemblyForm > div > div > div > div > div > div > div.headerMessage")
 		WebElement agentPortalSuccessfulHeader;
 
 	//credit card details

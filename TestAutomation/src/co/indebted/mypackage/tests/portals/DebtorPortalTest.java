@@ -71,7 +71,7 @@ public class DebtorPortalTest extends TestSetupAndTearDown{
 			debtorPortalPage.getStep2NextButton().click();
 			Thread.sleep(2000);
 			debtorPortalPage.getConfirmButton().click();
-			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
+			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Thank you, Your payment was processed successfully.");
 			Thread.sleep(1000);
 		}
 		catch(AssertionError ex){
@@ -111,7 +111,7 @@ public class DebtorPortalTest extends TestSetupAndTearDown{
 			debtorPortalPage.getStep2NextButton().click();
 			Thread.sleep(2000);
 			debtorPortalPage.getConfirmButton().click();
-			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Yay! Your payment has been successful. Thanks!");
+			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Thank you, Your payment was processed successfully.");
 			Thread.sleep(1000);
 		}
 		catch(AssertionError ex){
@@ -134,7 +134,8 @@ public class DebtorPortalTest extends TestSetupAndTearDown{
 			Thread.sleep(2000);
 			debtorPortalPage.waitForReferenceCodeGenerated2();
 			debtorPortalPage.getConfirmButton().click();
-			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Your debts is now Promise to Pay.");
+			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Thank you for notifying us of your intention to pay.\n" + 
+					"Your next step is to transfer the funds to complete the payment.");
 			Thread.sleep(1000);
 		}
 		catch(AssertionError ex){
@@ -157,7 +158,8 @@ public class DebtorPortalTest extends TestSetupAndTearDown{
 			Thread.sleep(2000);
 			debtorPortalPage.waitForReferenceCodeGenerated1();
 			debtorPortalPage.getConfirmButton().click();
-			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Your debts is now Promise to Pay.");
+			Assert.assertEquals(debtorPortalPage.getSuccessfulHeader().getText(), "Thank you for notifying us of your intention to pay.\n" + 
+					"Your next step is to transfer the funds to complete the payment.");
 			Thread.sleep(1000);
 		}
 		catch(AssertionError ex){

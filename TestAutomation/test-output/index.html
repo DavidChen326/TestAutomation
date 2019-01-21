@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="co.indebted.mypackage.tests.portals.AgentPortalTest" class="method navigator-link" hash-for-method="agentPortalTest">agentPortalTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="co.indebted.mypackage.tests.portals.DebtorPortalTest" class="method navigator-link" hash-for-method="debtorPortalTest">debtorPortalTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,22 +120,20 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">co.indebted.mypackage.tests.portals.AgentPortalTest</span>
+              <span class="class-name">co.indebted.mypackage.tests.portals.DebtorPortalTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="agentPortalTest">
-                  </a> <!-- agentPortalTest -->
-                  <span class="method-name">agentPortalTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #assemblyForm &gt; div &gt; div &gt; div.c014 &gt; div &gt; div:nth-child(2) &gt; div &gt; form &gt; div &gt; div:nth-child(2) &gt; div.c0125 &gt; button
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+                  <a name="debtorPortalTest">
+                  </a> <!-- debtorPortalTest -->
+                  <span class="method-name">debtorPortalTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;select id=&quot;email_contact_to&quot; class=&quot;form-control select optional&quot; name=&quot;email_contact[to]&quot;&gt; could not be scrolled into view
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;Davids-MBP&apos;, ip: &apos;fe80:0:0:0:c66:32a7:8354:a2f3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.2&apos;, java.version: &apos;10.0.1&apos;
+System info: host: &apos;Davids-MBP&apos;, ip: &apos;10.40.0.77&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.2&apos;, java.version: &apos;10.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0.3, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 83584, moz:profile: /var/folders/5h/r82dfr4151g..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 28dc63d3-0196-044e-b490-e073108982af
-*** Element info: {Using=css selector, value=#assemblyForm &gt; div &gt; div &gt; div.c014 &gt; div &gt; div:nth-child(2) &gt; div &gt; form &gt; div &gt; div:nth-child(2) &gt; div.c0125 &gt; button}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 64.0.2, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 55185, moz:profile: /var/folders/5h/r82dfr4151g..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 18.2.0, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7341bb5a-0f8f-b74d-a9fe-8c1df6d4f3ce
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -146,14 +144,15 @@ Session ID: 28dc63d3-0196-044e-b490-e073108982af
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at co.indebted.mypackage.tests.portals.AgentPortalTest.agentPortalTest(AgentPortalTest.java:31)
+	at co.indebted.mypackage.tests.portals.DebtorPortalTest.debtorPortalTest(DebtorPortalTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -188,7 +187,7 @@ Session ID: 28dc63d3-0196-044e-b490-e073108982af
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/5h/r82dfr4151gg3yjyrflqh_s40000gn/T/testng-eclipse--1495701172/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/5h/r82dfr4151gg3yjyrflqh_s40000gn/T/testng-eclipse--866375627/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,7 +196,7 @@ Session ID: 28dc63d3-0196-044e-b490-e073108982af
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;co.indebted.mypackage.tests.portals.AgentPortalTest&quot;/&gt;
+      &lt;class name=&quot;co.indebted.mypackage.tests.portals.DebtorPortalTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -239,14 +238,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'agentPortalTest')
-data.setCell(0, 2, 'co.indebted.mypackage.tests.portals.AgentPortalTest')
-data.setCell(0, 3, 31347);
+data.setCell(0, 1, 'debtorPortalTest')
+data.setCell(0, 2, 'co.indebted.mypackage.tests.portals.DebtorPortalTest')
+data.setCell(0, 3, 16165);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -272,7 +271,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">co.indebted.mypackage.tests.portals.AgentPortalTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">co.indebted.mypackage.tests.portals.DebtorPortalTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
@@ -280,12 +279,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">agentPortalTest</span>
-                <span class="method-start">5105 ms</span>
+                <span class="method-name">debtorPortalTest</span>
+                <span class="method-start">3155 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36457 ms</span>
+                <span class="method-start">19324 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
