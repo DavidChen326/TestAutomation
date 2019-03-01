@@ -51,7 +51,7 @@ public class LoginTestDDT_CSV {
 		System.out.println("Test is completed");
 	}
 	
-	//pass parameters into test method via constractor
+	//pass parameters into test method via constructor
 	@Parameters
 	public static List<String[]> getData(){
 		return co.indebted.mypackage.utilities.CSV.get("/Users/davidchen/Documents/Selenium/DDT/LoginTestDDT.csv");
